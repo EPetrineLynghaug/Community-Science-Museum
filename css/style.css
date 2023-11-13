@@ -142,7 +142,7 @@ ul {
         rgba(0, 0, 0, 0.5),
         #1d1d1d 90%
     ),
-    url(./img/museum2.jpg);
+    url('./img/museum2.jpg');
 
         background-size: cover;
         background-position: center bottom;
