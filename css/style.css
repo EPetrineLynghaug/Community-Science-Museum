@@ -12,7 +12,7 @@ footer{
     background-color: rgb(127, 555, 212);
     color: black;
 }
-
+/*Mobile first*/
 .mobile-menu{
     display: flex;
     flex-direction: row;
@@ -72,13 +72,6 @@ footer{
     background: black;
 }
 
-/*Bilder*/
-.logo img{
-    height: auto;
-    width: 92px;
-    margin: auto 5px;
-    padding: 10px;
-    margin-top: 7px;
-    }
+
 
 
