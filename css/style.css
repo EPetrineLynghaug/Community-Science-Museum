@@ -22,10 +22,6 @@ body{
    
 }
 
-footer{
-    background-color: rgb(127, 555, 212);
-    color: black;
-}
 
 /*Mobile first*/
 ul {
@@ -279,4 +275,13 @@ ul {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
-  
+.gradient-footer {
+        position: relative;
+        width: 100%;
+        height: 250px; 
+        background: linear-gradient(to right top,rgb(127, 555, 212), rgba(250, 250, 250, 0)); 
+        color: black;
+        text-align: center;
+        padding: 20px;
+        overflow: hidden;
+    }
