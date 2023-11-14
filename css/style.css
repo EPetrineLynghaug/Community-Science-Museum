@@ -231,8 +231,8 @@ ul {
     margin: 20px auto;   
   }
   .cards-small{
-    background-color: rgb(24,0,0);
-    color: #fafafa;
+    background-color: rgb(245,245,245);
+    color: black;
   }
   
   .cards-news {
