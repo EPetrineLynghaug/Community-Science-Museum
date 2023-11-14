@@ -207,16 +207,6 @@ ul {
     opacity: 1;
   }
   
-  
-  /* Medieforespørsler for større skjermer */
-  @media (min-width: 600px) {
-    /* Ekstra stiler for skjermer bredere enn 600px hvis nødvendig */
-  }
-  
-  @media (min-width: 768px) {
-    /* Ekstra stiler for skjermer bredere enn 768px hvis nødvendig */
-  }
-  
 
 .cards{
     width: 90%;
