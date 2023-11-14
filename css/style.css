@@ -7,7 +7,7 @@
 header {
     background-color: #fafafa;
     color: black;
-    border-bottom: solid 1px black;
+    border-bottom: solid 7px rgb(127, 555, 212);
     max-height: 75px;
     padding: 0;
     display: flex;
@@ -16,7 +16,7 @@ header {
 body{
     background-color: #fafafa;
     color: black;
-    /*filter: blur(4px);*/
+   
 }
 
 footer{
@@ -216,8 +216,9 @@ ul {
     opacity: 1;
   }
   
+  /*Cards*/
 
-.cards{
+.cards, .cards-news-small{
     width: 90%;
     max-width: 500px;
     display: flex;
@@ -229,14 +230,14 @@ ul {
     margin: 20px auto;   
 }
 
-.cards-news{
+.cards-news, .cards-news-small{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.cards-news img{
+.cards-news img, .cards-news-small img{
     background-size: contain;
     background-repeat: no-repeat;
     justify-content: center;
@@ -248,6 +249,7 @@ ul {
 .cards-news-description{
     text-align: center;
 }
+
 
 
   
