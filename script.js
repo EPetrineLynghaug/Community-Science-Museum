@@ -23,8 +23,5 @@ function currentSlide(n) {
   showSlides(slideIndex = n - 1);
 }
 
-// Autostart slideshow (kommenter ut hvis du ikke vil ha automatisk avspilling)
-// setInterval(function () {
-//   showSlides(1);
-// }, 2000);
+
 

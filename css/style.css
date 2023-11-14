@@ -202,14 +202,14 @@ ul {
     height: 15px;
     width: 15px;
     margin: 0 2px;
-    background-color: #bbb;
+    background-color: rgb(127, 555, 212);
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
   }
   
   .active, .dot:hover {
-    background-color: #717171;
+    background-color: black;
   }
   
   .fade {
@@ -218,7 +218,7 @@ ul {
   
   /*Cards*/
 
-.cards, .cards-news-small{
+  .cards, .cards-news-small {
     width: 90%;
     max-width: 500px;
     display: flex;
@@ -226,30 +226,41 @@ ul {
     background-color: white;
     box-shadow: 0 3px 6px rgba(0, 0, 0, .12);
     border: 1px solid hsl( 0, 0%, 94%);
-    padding: 6px;
+    padding: 12px;
     margin: 20px auto;   
-}
-
-.cards-news, .cards-news-small{
+  }
+  
+  .cards-news, .cards-news-small {
     display: flex;
-    flex-direction: row;
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
-}
-
-.cards-news img, .cards-news-small img{
+  }
+  
+  .cards-news img, .cards-news-small img {
     background-size: contain;
     background-repeat: no-repeat;
-    justify-content: center;
-    overflow: hidden;
     width: 100%;
-
-}
-
-.cards-news-description{
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .12);
+  }
+  
+  .cards-news-description, .cards-news-description-small {
     text-align: center;
+    margin: 10px;
+  }
+  .cards-news {
+    align-items: center;
+  }
+  .cards-news-small {
+    align-items: center;
+  }
+  
+  .cards,
+.cards-small {
+  border: 1px solid red; 
 }
-
 
 
   
