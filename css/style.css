@@ -228,10 +228,15 @@ ul {
     display: flex;
     flex-direction: column;
     background-color: white;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, .12);
+    box-shadow:0 3px 6px rgba(0, 0, 0, .12),
+    0 2px 4px rgba(0, 0, 0, .24);
     border: 1px solid hsl( 0, 0%, 94%);
     padding: 12px;
     margin: 20px auto;   
+  }
+  .cards-small{
+    background-color: rgb(24,0,0);
+    color: #fafafa;
   }
   
   .cards-news {
@@ -253,7 +258,8 @@ ul {
     width: 100%;
     max-width: 100%;
     height: auto;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, .12);
+    box-shadow:0 3px 6px rgba(0, 0, 0, .12),
+    0 2px 4px rgba(0, 0, 0, .24);
   }
   
   .cards-news-description, .cards-news-description-small {
@@ -267,10 +273,10 @@ ul {
     align-items: center;
   }
   
-  .cards,
-.cards-small {
-  border: 1px solid red; 
-}
 
+  .cards:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
 
   
