@@ -1,17 +1,30 @@
-
-
-// script.js-innholdet
 let slideIndex = 0;
-showSlides();
 
-function showSlides() {
-  let i;
+function showSlides(n) {
+  slideIndex += n;
   let slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+
+  if (slideIndex >= slides.length) {
+    slideIndex = 0;
+  } else if (slideIndex < 0) {
+    slideIndex = slides.length - 1;
   }
-  slideIndex++;
-  if (slideIndex > slides.length) { slideIndex = 1; }
-  slides[slideIndex - 1].style.display = "block";
-  setTimeout(showSlides, 4000); // Endre bilde hvert 2. sekund
+
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+    slides[i].classList.remove("fade"); // Fjern fade-klassen
+  }
+
+  slides[slideIndex].style.display = "block";
+  slides[slideIndex].classList.add("fade"); // Legg til fade-klassen
 }
+
+function currentSlide(n) {
+  showSlides(slideIndex = n - 1);
+}
+
+// Autostart slideshow (kommenter ut hvis du ikke vil ha automatisk avspilling)
+// setInterval(function () {
+//   showSlides(1);
+// }, 2000);
+
