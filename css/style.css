@@ -91,7 +91,7 @@ a {
   .menu-icon {
     display: block;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 24px;
     z-index: 1;
     margin: auto 3px;
   }
