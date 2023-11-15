@@ -23,87 +23,93 @@ body{
     background-color: #fafafa;
     color: black;   
 }
-h1{
+h1,h2{
     text-align: center;
     font-family: 'Lora', serif;
     padding: 10px;
-
+}
+p{
+    font-family:'Roboto', sans-serif;
 }
 
 
-/*Mobile first*/
-ul {
-    list-style-type: none;
-    padding: 0;
-    color: black;
-  }
-  
-  ul li a {
+/*Mobile meny*/
+
+a {
     text-decoration: none;
   }
   
-  ul li a:hover {
-    color: black;
-    background-color: rgb(127, 555, 212);
+  a:hover {
+    color: white;
+    background-color: #777;
   }
   
+ 
   .menu-list {
     list-style-type: none;
     padding: 0;
     margin: 0;
   }
   
-  .menu-list .menu-item {
-    margin-bottom: 20px;
+  .menu-list .hamburger-item {
+    margin-bottom: 10px;
     transition: margin-bottom 0.3s;
   }
   
-  .menu-list .menu-item a {
+  .menu-list a {
     text-decoration: none;
     color: black;
-    padding: 8px 12px;
+    padding: 6px 8px;
     display: block;
     text-align: center;
     transition: color 0.3s, background-color 0.3s;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    line-height: 1.5;
-    border-bottom: 10px solid transparent;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    line-height: 1.2;
+    border-radius: 3px;
   }
   
-  .menu-list .menu-item a:hover {
+  .menu-list a:hover {
     color: white;
-    background: #333;
+    background-color: #777;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   }
+  .menu-list a:active {
+    color: white;
+    background-color: #777;
+}
+  
   
   .mobile-menu {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
-    padding: 0 12px;
+    padding: 0 8px;
     width: 100%;
   }
   
   .menu-icon {
     display: block;
     cursor: pointer;
-    font-size: 28px;
+    font-size: 20px;
     z-index: 1;
-    margin: auto 5px;
+    margin: auto 3px;
   }
+  
   
   .meny {
     display: none;
     position: fixed;
-    top: 60px;
-    right: 20px;
+    top: 50px;
+    right: 10px;
     background-color: #fff;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
+    border-radius: 3px;
+    padding: 8px;
     z-index: 1;
   }
   
+
   #hamburger-menu:checked + .meny {
     display: block;
   }
@@ -111,6 +117,7 @@ ul {
   #hamburger-menu {
     display: none;
   }
+  
   
 
 
