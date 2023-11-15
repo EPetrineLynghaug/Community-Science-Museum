@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Lora:ital,wght@0,400;1,500&family=Oswald:wght@300&family=Roboto+Slab&family=Roboto:ital,wght@0,900;1,100;1,400&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -18,8 +21,13 @@ header {
 }
 body{
     background-color: #fafafa;
-    color: black;
-   
+    color: black;   
+}
+h1{
+    text-align: center;
+    font-family: 'Lora', serif;
+    padding: 10px;
+
 }
 
 
@@ -274,7 +282,10 @@ ul {
     transform: scale(1.05);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
-
+.cards-small:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
 .gradient-footer {
         position: relative;
         width: 100%;
@@ -284,4 +295,8 @@ ul {
         text-align: center;
         padding: 20px;
         overflow: hidden;
-    }
+}
+
+    
+    
+    
