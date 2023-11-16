@@ -152,7 +152,7 @@ a {
 /*CSS carousel*/
 .css-carousel-container {
   overflow-y: none;
-  overflow: x: scroll;
+  overflow-x: scroll;
   display: flex;
   scroll-snap-type: x mandatory;
 }
