@@ -33,6 +33,9 @@ h1,h2,h3,h4,h5,h6{
 h1{
     font-weight: 600;
 }
+h2{
+  margin-top: 15px;
+}
 
 
 .exhibition-hero {
@@ -146,9 +149,10 @@ a {
     object-fit: cover;
 }
 
-
+/*CSS carousel*/
 .css-carousel-container {
-  overflow: auto;
+  overflow-y: none;
+  overflow: x: scroll;
   display: flex;
   scroll-snap-type: x mandatory;
 }
