@@ -178,7 +178,7 @@ a {
   scroll-snap-align: start;
 }
   
-  /*Cards*/
+  /*Cards hovedsiden*/
 
   .cards, .cards-small {
     width: 90%;
@@ -239,6 +239,24 @@ a {
 .cards-small:hover {
     transform: scale(1.05);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/*Cards på exhibition*/
+.cards-exhibitions {
+  position: relative;
+  overflow: hidden;
+}
+.cards-exsplore-exhibitions img{
+ width: 100%;
+ height: auto;
+ display: block;
+}
+
+.cards-exhibitions-description {
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  padding: 10px;
 }
 .gradient-footer {
         position: relative;
