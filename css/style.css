@@ -250,6 +250,8 @@ a {
  width: 100%;
  height: auto;
  display: block;
+ top: 0;
+ left: 0;
 }
 
 .cards-exhibitions-description {
