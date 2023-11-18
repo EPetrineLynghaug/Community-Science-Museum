@@ -191,6 +191,7 @@ a {
     border: 1px solid hsl( 0, 0%, 94%);
     padding: 12px;
     margin: 20px auto;   
+    transition-duration: 0.2s;
   }
   .cards-small{
     background-color: rgb(245,245,245);
@@ -233,11 +234,13 @@ a {
   
 
   .cards:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    /*box-shadow: none;*/
+  
+   transform: scale(1.025);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 .cards-small:hover {
-    transform: scale(1.05);
+    transform: scale(1.025);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -246,6 +249,7 @@ a {
   position: relative;
   overflow: hidden;
 }
+
 .cards-exsplore-exhibitions img{
  width: 100%;
  height: auto;
@@ -254,11 +258,21 @@ a {
  left: 0;
 }
 
+.cards-exhibitions-description p{
+  margin-top: 6px;
+
+}
 .cards-exhibitions-description {
   position: relative;
   z-index: 1;
   background-color: white;
-  padding: 10px;
+  padding: 0px 10px 24px 10px;
+
+
+}
+.cards-exhibitions-description p:first-child{
+  margin-top: 0;
+
 }
 .gradient-footer {
         position: relative;
