@@ -256,7 +256,9 @@ a {
  display: block;
  top: 0;
  left: 0;
+ background-image: url('./img/adris-george-1-1_11zon.jpg');
 }
+
 
 .cards-exhibitions-description p{
   margin-top: 6px;
