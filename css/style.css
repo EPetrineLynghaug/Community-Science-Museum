@@ -283,6 +283,7 @@ a {
 .cards-exhibitions {
   position: relative;
   overflow: hidden;
+  margin-bottom: 12px;
 }
 
 /*
@@ -302,6 +303,19 @@ a {
   background-position: center center;
   background-repeat: no-repeat;
   color: #fff;
+}
+.cards-exhibitions.card-light .cards-exhibitions-description {
+  /* background-image: url('../img/adrien-olichon-9zhsq3o1k60-unsplash_11zon.jpg'); */
+  background: linear-gradient(
+    to bottom,
+    hsla(0, 0%, 100%, 0.1) 0%,
+    hsla(0, 0%, 100%, 0.7) 100%
+  ),
+  url('../img/jean-philippe-delberghe-75xPHEQBmvA-unsplash_11zon.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: #000;
 }
 .cards-exhibitions-description h2 {
   margin-top: 0;
