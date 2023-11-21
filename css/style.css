@@ -285,6 +285,28 @@ a {
   overflow: hidden;
 }
 
+/*
+  ./ = This directory
+  ../ = Parent directory
+  / = Root directory
+*/
+.cards-exhibitions.card-dark .cards-exhibitions-description {
+  /* background-image: url('../img/adrien-olichon-9zhsq3o1k60-unsplash_11zon.jpg'); */
+  background: linear-gradient(
+    to bottom,
+    hsla(0, 0%, 0%, 0.1) 0%,
+    hsla(0, 0%, 0%, 0.9) 100%
+  ),
+  url('../img/adrien-olichon-9zhsq3o1k60-unsplash_11zon.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+.cards-exhibitions-description h2 {
+  margin-top: 0;
+}
+
 .cards-exsplore-exhibitions img{
  width: 100%;
  height: auto;
