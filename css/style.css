@@ -145,7 +145,28 @@ a {
     margin-right: 15px; 
     color: #3f3d3d;
   }
+  /*Knappen Donate*/
+  .donate-container {
+    text-align: center; 
+    order: 0; /
+  }
   
+  .donate-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #FF6347; 
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .donate-btn:hover {
+    background-color: #D32F2F; /* Endre farge ved hover, en mørkere rød */
+  }
+  
+  
+
 
 /*Bilder*/
 .logo img{
@@ -154,8 +175,6 @@ a {
     margin-left: 10px;
     margin-right: 10px;
 }
-
-
 
 .hero img{
     width: 100%;
