@@ -38,17 +38,19 @@ h1{
 h2{
   margin-top: 15px;
 }
-.visit-title{
-  margin-top: 15%;
-}
 
 
-.exhibition-hero {
+
+.exhibition-hero{
 position: absolute; 
   top: 50%; 
   left: 50%;
   transform: translate(-50%, -50%); 
   color: white; 
+}
+.hero-visit img{
+  width: 100%;
+  height: 50%;
 }
 
 /*Mobile meny*/
@@ -269,9 +271,7 @@ a {
   
 
   .cards:hover {
-    /*box-shadow: none;*/
-  
-   transform: scale(1.025);
+  transform: scale(1.025);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 .cards-small:hover {
@@ -286,13 +286,8 @@ a {
   margin-bottom: 12px;
 }
 
-/*
-  ./ = This directory
-  ../ = Parent directory
-  / = Root directory
-*/
+
 .cards-exhibitions.card-dark .cards-exhibitions-description {
-  /* background-image: url('../img/adrien-olichon-9zhsq3o1k60-unsplash_11zon.jpg'); */
   background: linear-gradient(
     to bottom,
     hsla(0, 0%, 0%, 0.1) 0%,
@@ -305,7 +300,6 @@ a {
   color: #fff;
 }
 .cards-exhibitions.card-light .cards-exhibitions-description {
-  /* background-image: url('../img/adrien-olichon-9zhsq3o1k60-unsplash_11zon.jpg'); */
   background: linear-gradient(
     to bottom,
     hsla(0, 0%, 100%, 0.1) 0%,
