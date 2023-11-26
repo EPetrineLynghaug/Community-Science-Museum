@@ -341,6 +341,22 @@ a {
   margin-top: 0;
 
 }
+
+.visit{
+  padding: 10px;
+}
+
+.map{
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.map iframe{
+  width: 100%;
+  max-width: 360px;
+  height: 250px;
+
+}
 .gradient-footer {
         position: relative;
         width: 100%;
