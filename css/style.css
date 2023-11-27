@@ -343,7 +343,8 @@ a {
 }
 
 .visit{
-  padding: 10px;
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
 
 .map{
@@ -357,6 +358,61 @@ a {
   height: 250px;
 
 }
+
+/*Donate siden*/
+.donation-card {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  margin-top: 100px;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+}
+
+.donation-options {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
+}
+
+input[type="text"] {
+  padding: 8px;
+  margin-top: 5px;
+}
+
+.donate-button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px;
+  text-decoration: none; 
+  display: inline-block; 
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.donate-button:hover {
+  background-color: #45a049;
+}
+
+/*Footer*/
 .gradient-footer {
         position: relative;
         width: 100%;

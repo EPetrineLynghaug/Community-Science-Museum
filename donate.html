@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <img src="./img/logo.png" alt="logo" />
+        </div>
+      
+        <div class="mobile-menu">
+          <label for="hamburger-menu" class="menu-icon">
+            Meny <i class="fas fa-bars"></i>
+          </label>
+        </div>
+      
+        <input type="checkbox" id="hamburger-menu" />
+        <nav class="meny menu-desktop">
+          <ul class="menu-list">
+            <li class="hamburger-item"><a href="./index.html" class="active"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li class="hamburger-item"><a href="./visit.html"><i class="fa-solid fa-map-pin"></i>Visit</a></li>
+            <li class="hamburger-item"><a href="./exploreexhibition.html"><i class="fa-solid fa-atom"></i>Exsplore Exhibitions</a></li>
+            <li class="hamburger-item"><a href="./spesialeevents.html"><i class="fa-solid fa-burst"></i>Spesiale events</a></li>
+          </ul>
+        </nav>
+      </header>
+<main>
+    <div class="donation-card">
+        <h2>Donate Now</h2>
+        <form action="#" method="post">
+            <label for="donation-amount">Select Donation Amount:</label>
+            <div class="donation-options">
+                <input type="radio" id="amount-10" name="donation-amount" value="10">
+                <label for="amount-10">$10</label>
+                
+                <input type="radio" id="amount-25" name="donation-amount" value="25">
+                <label for="amount-25">$25</label>
+                
+                <input type="radio" id="amount-50" name="donation-amount" value="50">
+                <label for="amount-50">$50</label>
+            </div>
+
+            <label for="custom-amount">Or Enter Custom Amount:</label>
+            <input type="text" id="custom-amount" name="custom-amount" placeholder="Enter custom amount">
+
+            <a href="./donetsuccess.html" class="donate-button">Donate Now</a>
+        </form>
+</main>
+<footer class="footer"></footer>
+
+</body>
+</html>
