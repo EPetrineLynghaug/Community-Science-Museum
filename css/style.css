@@ -426,15 +426,16 @@ label {
 
 .donation-options {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
   align-items: center;
   margin-bottom: 15px;
 }
-
-.donation-option label {
+.donation-options div {
+  display: flex;
+  justify-content: center;
+}
+.donation-options label {
   margin: 0 24px 0 6px;
-  display: block;
-  border:  2px solid  red;
 }
 
 input[type="text"] {
