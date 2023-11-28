@@ -16,6 +16,7 @@ font-family: 'Roboto', sans-serif;
 
 main {
   flex: 1;
+  margin-bottom: 15px;
 }
 
 footer {
@@ -385,10 +386,13 @@ h2 {
 ul {
   list-style: none;
   padding: 0;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 li {
   margin: 10px 0;
+  white-space: nowrap;
 }
 
 strong {
@@ -403,7 +407,7 @@ strong {
   text-align: center;
   max-width: 400px;
   width: 100%;
-  margin-top: 100px;
+  margin: 100px auto 0 auto;
 }
 
 h2 {
@@ -422,8 +426,15 @@ label {
 
 .donation-options {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
+  align-items: center;
   margin-bottom: 15px;
+}
+
+.donation-option label {
+  margin: 0 24px 0 6px;
+  display: block;
+  border:  2px solid  red;
 }
 
 input[type="text"] {
@@ -450,7 +461,6 @@ input[type="text"] {
 
 /*Footer*/
 .gradient-footer {
-  position: relative;
   width: 100%;
   height: 250px;
   background: linear-gradient(to right top, rgba(127, 555, 212, 0.7), rgba(250, 250, 250, 0.7));
