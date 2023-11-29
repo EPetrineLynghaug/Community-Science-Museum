@@ -1,4 +1,6 @@
-
+:root{
+ --med-padding: 15px;
+}
   @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
 * {
     box-sizing: border-box;
@@ -361,13 +363,13 @@ a {
 }
 
 .map{
-  padding: 10px;
   display: flex;
   justify-content: center;
+  padding: var(--med-padding);
 }
 .map iframe{
   width: 100%;
-  max-width: 360px;
+  /*max-width: 360px;*/
   height: 250px;
 
 }
@@ -378,6 +380,16 @@ a {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.opening-hours ul li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.opening-days {
+  display: block;
+  min-width: 100px;
+  
 }
 
 h2 {
@@ -402,8 +414,10 @@ strong {
   color: #555;
 }
 
-.additional-info p {
-  font-family: 'Arial', sans-serif;
+.admission-info{
+  padding: var(--med-padding);
+}
+.admission-info p {
   font-size: 16px;
   line-height: 1.6;
   color: #333;
@@ -420,6 +434,7 @@ strong {
   max-width: 400px;
   width: 100%;
   margin: 100px auto 0 auto;
+
 }
 
 h2 {
