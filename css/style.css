@@ -471,7 +471,7 @@ input[type="text"] {
 .donate-button:hover {
   background-color: #45a049;
 }
-
+/*Tekst på donate siden.*/
 .volunteering, .support, .internships {
   max-width: 800px;
   margin: 20px auto;
@@ -491,7 +491,28 @@ input[type="text"] {
   color: #333;
   margin-bottom: 15px;
 }
-
+/*Iconer */
+.color-icon{
+  background-color: #7FFFD4;
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh; /* Er vh en god ide her? det må du sjekke mer opp i. */
+}
+.color-icon i{
+  padding: 0;
+  margin: 0;
+  color: #000;
+}
 /*Footer*/
 .gradient-footer {
   width: 100%;
