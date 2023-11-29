@@ -472,6 +472,26 @@ input[type="text"] {
   background-color: #45a049;
 }
 
+.volunteering, .support, .internships {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.volunteering, .support, .internships h2 {
+  color: #333;
+}
+
+.volunteering, .support, .internships p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 15px;
+}
+
 /*Footer*/
 .gradient-footer {
   width: 100%;
