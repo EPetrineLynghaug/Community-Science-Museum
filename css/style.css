@@ -1,19 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
 :root{
- --med-padding: 15px;
+  --med-padding: 15px;
+  --lg-padding: 24px;
+
+  --color-white-100: hsl(0, 0%, 96%);
+  --color-white-200: hsl(0, 0%, 90%);
+  --color-white-300: hsl(0, 0%, 83%);
+  --color-white-400: hsl(0, 0%, 72%);
+
+  --color-black-900: hsl(0,0%, 20%);
+  --color-black:     hsl(0,0%, 0%);
+
+  --color-primary-100: #DFFFF5;
+  --color-primary-400: #7FFFD4;
+  --color-primary-700: #56988E;
 }
-  @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+/*Globale klasser*/
+.card-bg-primary-dark {
+  background-color: var(--color-primary-700);
+  color: var(--color-white-100);
+}
+.card-bg-primary-dark h2 { color: var(--color-primary-100); }
+
+/* Wildcard(alle objekter) */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 body{
-display: flex;
-flex-direction: column;
-min-height: 100vh;
-background-color: #fafafa;
-color: hsl(0,0%, 20%);
-font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #fafafa;
+  color: var(--color-black-900);
+  font-family: 'Roboto', sans-serif;
 }
 
 main {
@@ -25,7 +47,6 @@ footer {
   text-align: center;
   margin-top: 20px;
 }
-
 
 header {
     background-color: hsla(0, 0%, 100%,0.85 );
@@ -46,13 +67,8 @@ h1,h2,h3,h4,h5,h6{
     font-family: 'Lora', serif;
     padding: 10px;
 }
-h1{
-    font-weight: 600;
-}
-
-h2{
-  margin-top: 15px;
-}
+h1 { font-weight: 600; }
+h2 { margin-top: 15px; }
 
 
 
@@ -68,8 +84,7 @@ position: absolute;
   height: 50%;
 }
 
-/*Mobile meny*/
-
+/* ? Mobile menu */
 a {
     text-decoration: none;
   }
@@ -145,14 +160,18 @@ a {
   }
   
 
-  #hamburger-menu:checked + .meny {
-    display: block;
-  }
-  
-  #hamburger-menu {
-    display: none;
-  }
-  /*Ikke ferdig.*/
+  #hamburger-menu:checked + .meny { display: block; }
+  #hamburger-menu { display: none; }
+
+  /*
+  TODO: Ikke ferdig
+
+  ? Ikke ferdig
+
+  ! Ikke ferdig
+
+  * Ikke ferdig
+  */
   .hamburger-item a {
     text-decoration: none;
     color: #010101; 
@@ -160,8 +179,8 @@ a {
     align-items: center; 
   }
   .fa-solid {
-    margin-right: 15px; 
-    color:  #7FFFD4;
+    margin-right: var(--med-padding); 
+    color:  var(--color-primary-400);
   }
   /*Knappen Donate*/
   .menu-container {
@@ -174,21 +193,19 @@ a {
     display: inline-block;
     padding: 10px 15px;
     text-decoration: none;
-    color: black;
-    background-color: #7FFFD4; 
-    border: 1px solid black;
+    color: var(--color-black);
+    background-color: var(--color-primary-400); 
+    border: 1px solid var(--color-black);
     border-radius: 5px;
     transition: background-color 0.3s ease;
   }
   
-  .donate-btn:hover {
-    background-color: #6BBEC8;
-  }
+  .donate-btn:hover { background-color: #6BBEC8; }
+/* ? Mobile menu end */
   
+/* ! ####################################################### */
   
-
-
-/*Bilder*/
+/* ? Bilder */
 .logo img{
     height: auto;
     width: 80px;
@@ -238,14 +255,14 @@ a {
     display: flex;
     flex-direction: column;
     background-color: white;
-    box-shadow:0 3px 6px rgba(0, 0, 0, .12),
-    0 2px 4px rgba(0, 0, 0, .24);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .12),
+                0 2px 4px rgba(0, 0, 0, .24);
     border: 1px solid hsl( 0, 0%, 94%);
     padding: 12px;
     margin: 20px auto;   
     transition-duration: 0.2s;
   }
-  .cards-small{
+  .cards-small {
     background-color: rgb(245,245,245);
     color: black;
   }
@@ -362,12 +379,6 @@ a {
   margin-bottom: 20px;
 }
 
-/*
-  READ ME
-
-  Moved 'admission' classes
-  added accessibility, food, shop, location
-*/
 .admission-info,
 .accessibility,
 .food,
@@ -388,63 +399,45 @@ a {
 }
 .map iframe{
   width: 100%;
-  /*max-width: 360px;*/
   height: 250px;
 
 }
 
-
-/*
-  READ ME
-
-  Added margin
-*/
-.opening-hours {
+/* ? Visit page / opening hours */
+.opening-hours,.admission-info,.accessibility, .food, .shop, .location {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 15px;
+  margin: 0 15px 30px 15px;
   padding: 20px;
-  background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
 }
-/*
-  READ ME
 
-  Added margin
-*/
 .opening-hours-list li {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 15px;
 }
-/*
-  READ ME
 
-  Fixed width and text alignment
-  added border
-*/
 .opening-days {
   display: block;
   min-width: 120px;
   text-align: right;
-  border-bottom: 1px solid #dadada;
+  border-bottom: 1px solid #6BCCB1;
+  color: var(--color-primary-100);
 }
 .opening-time {
   display: block;
   min-width: 120px;
   text-align: left;
-  border-bottom: 1px solid #dadada;
+  border-bottom: 1px solid #6BCCB1;
 }
-/*
-  READ ME
 
-  Added 'closed' class with color red
-*/
 .closed {
-  color: hsl(0, 75%, 60%);
+  color: #FC9CA2;
 }
 .opening-hours img{
   display: block;
@@ -452,6 +445,10 @@ a {
   max-width: 200px;
   margin: 15px auto 0 auto;
   
+}
+.accessibility img, .admission-info img{
+  width: 100%;
+  max-width: 200px;
 }
 h2 {
   color: #333;
