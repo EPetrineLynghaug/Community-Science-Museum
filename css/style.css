@@ -362,7 +362,26 @@ a {
   margin-bottom: 20px;
 }
 
-.map{
+/*
+  READ ME
+
+  Moved 'admission' classes
+  added accessibility, food, shop, location
+*/
+.admission-info,
+.accessibility,
+.food,
+.shop,
+.location {
+  padding: var(--med-padding);
+}
+.admission-info p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 15px;
+}
+.map {
   display: flex;
   justify-content: center;
   padding: var(--med-padding);
@@ -375,23 +394,65 @@ a {
 }
 
 
+/*
+  READ ME
+
+  Added margin
+*/
 .opening-hours {
-  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 15px;
   padding: 20px;
+  background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.opening-hours ul li {
+/*
+  READ ME
+
+  Added margin
+*/
+.opening-hours-list li {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
+  margin-bottom: 15px;
 }
+/*
+  READ ME
+
+  Fixed width and text alignment
+  added border
+*/
 .opening-days {
   display: block;
-  min-width: 100px;
+  min-width: 120px;
+  text-align: right;
+  border-bottom: 1px solid #dadada;
+}
+.opening-time {
+  display: block;
+  min-width: 120px;
+  text-align: left;
+  border-bottom: 1px solid #dadada;
+}
+/*
+  READ ME
+
+  Added 'closed' class with color red
+*/
+.closed {
+  color: hsl(0, 75%, 60%);
+}
+.opening-hours img{
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 15px auto 0 auto;
   
 }
-
 h2 {
   color: #333;
   text-align: center;
@@ -414,15 +475,6 @@ strong {
   color: #555;
 }
 
-.admission-info{
-  padding: var(--med-padding);
-}
-.admission-info p {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #333;
-  margin-bottom: 15px;
-}
 
 
 /*Donate siden*/
