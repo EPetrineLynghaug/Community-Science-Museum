@@ -51,17 +51,14 @@ body{
   color: var(--color-black-900);
   font-family: 'Roboto', sans-serif;
 }
-
 main {
   flex: 1;
   margin-bottom: 15px;
 }
-
 footer {
   text-align: center;
   margin-top: 20px;
 }
-
 header {
     background-color: hsla(0, 0%, 100%,0.85 );
     color: black;
@@ -70,19 +67,49 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: absolute;
+    /* position: absolute;
     top: 0;
-    left: 0;
+    left: 0; */
     width: 100%;
 }
-
-h1,h2,h3,h4,h5,h6{
-    text-align: center;
-    font-family: 'Lora', serif;
-    padding: 10px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+  font-family: 'Lora', serif;
+  padding: 10px;
 }
 h1 { font-weight: 600; }
-h2 { margin-top: 15px; }
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  text-align: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  margin-top: 10px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+li {
+  margin: 10px 0;
+  white-space: nowrap;
+}
+strong {
+  margin-right: 10px;
+  color: #555;
+}
 
 
 
@@ -220,17 +247,42 @@ a {
 /* ! ####################################################### */
   
 /* ? Bilder */
-.logo img{
+.logo img {
     height: auto;
     width: 80px;
     margin-left: 10px;
     margin-right: 10px;
 }
-
-.hero img{
+.hero {
+  position: relative;
+}
+.hero img {
     width: 100%;
     height: 250px;
     object-fit: cover;
+}
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+.hero-title {
+  color: var(--color-white-100);
+  font-size: 24px;
+}
+.slogan {
+  color: var(--color-white-100);
+}
+.slogan span {
+  color: var(--color-primary-400);
+  text-transform: uppercase;
 }
 .hero-explore-exhibition img{
   width: 100%;
@@ -238,8 +290,45 @@ a {
   object-fit: cover;
   
 }
-
-/*CSS carousel*/
+.css-carousel-container {
+  width: 100%;
+  /* display: flex;
+  flex-wrap: wrap; */
+}
+.box-row {
+  width: 100%;
+  height: 300px;
+  padding: 2px;
+  display: flex;
+}
+.box {
+  flex: 1;
+  padding: 2px;
+	transition-duration: 0.5s;
+}
+.box:hover {
+  flex: 3;
+}
+.box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  object-fit: cover;
+}
+.carousel-indicators {
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-indicator {
+  width: 12px;
+  height: 12px;
+  margin: 0 4px;
+  border-radius: 6px;
+  background-color: var(--color-primary-700);
+}
+/*CSS carousel
 .css-carousel-container {
   overflow-y: none;
   overflow-x: scroll;
@@ -361,7 +450,7 @@ a {
   margin-top: 0;
 }
 
-.cards-exsplore-exhibitions img{
+.cards-exsplore-exhibitions img {
  width: 100%;
  height: auto;
  display: block;
@@ -371,21 +460,17 @@ a {
 }
 
 
-.cards-exhibitions-description p{
+.cards-exhibitions-description p {
   margin-top: 6px;
-
 }
 .cards-exhibitions-description {
   position: relative;
   z-index: 1;
   background-color: white;
   padding: 0px 10px 24px 10px;
-
-
 }
-.cards-exhibitions-description p:first-child{
+.cards-exhibitions-description p:first-child {
   margin-top: 0;
-
 }
 /*VISIT*/
 .visit{
@@ -411,14 +496,18 @@ a {
   justify-content: center;
   padding: var(--med-padding);
 }
-.map iframe{
+.map iframe {
   width: 100%;
   height: 250px;
-
 }
 
 /* ? Visit page / opening hours */
-.opening-hours,.admission-info,.accessibility, .food, .shop, .location {
+.opening-hours,
+.admission-info,
+.accessibility,
+.food,
+.shop,
+.location {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -426,7 +515,6 @@ a {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  
 }
 
 .opening-hours-list li {
@@ -453,37 +541,20 @@ a {
 .closed {
   color: #FC9CA2;
 }
-.opening-hours img{
+.opening-hours img {
   display: block;
   width: 100%;
   max-width: 200px;
   margin: 15px auto 0 auto;
   
 }
-.accessibility img, .admission-info img{
+.accessibility img,
+.admission-info img,
+.food img,
+.shop img,
+.location img {
   width: 100%;
   max-width: 200px;
-}
-h2 {
-  color: #333;
-  text-align: center;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-li {
-  margin: 10px 0;
-  white-space: nowrap;
-}
-
-strong {
-  margin-right: 10px;
-  color: #555;
 }
 
 
@@ -497,21 +568,6 @@ strong {
   max-width: 400px;
   width: 100%;
   margin: 100px auto 0 auto;
-
-}
-
-h2 {
-  color: #333;
-  margin-bottom: 20px;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-label {
-  margin-top: 10px;
 }
 
 .donation-options {
@@ -603,7 +659,7 @@ input[type="text"] {
   margin-top: -17px; 
 }
 
-.gradient-footer::before {
+/* .gradient-footer::before {
   content: "";
   position: absolute;
   top: 0;
@@ -611,7 +667,7 @@ input[type="text"] {
   bottom: 0;
   left: 0;
   background: linear-gradient(to right top, rgba(127, 555, 212, 0), rgba(250, 250, 250, 0));
-}
+} */
 
 
     
