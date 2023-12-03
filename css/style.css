@@ -710,8 +710,7 @@ input[type="text"] {
 } */
 
 
-
-/* 992 */
+/* ? TABLET MEDIA QUERY */
 @media screen and (min-width: 768px) {
 
   .cards-exhibitions {
@@ -738,4 +737,10 @@ input[type="text"] {
     padding: 15px;
   }
 
+}
+
+
+/* TODO: Fix paragraphs and images + menu */
+/* ? SMALL LAPTOP MEDIA QUERY */
+@media screen and (min-width: 992px) {
 }
