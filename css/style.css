@@ -17,10 +17,11 @@
   --color-primary-400: #7FFFD4;
   --color-primary-700: #56988E;
 
-  --transparent-light: hsla(0, 0%, 96%, .1);
+  --transparent-light: hsla(0, 0%, 0%, .1);
 
   --box-shadow-sm: 0 3px 6px rgba(0, 0, 0, .12), 0 2px 4px rgba(0, 0, 0, .24);
   --box-shadow-md: 0 6px 10px rgba(0, 0, 0, .12), 0 3px 6px rgba(0, 0, 0, .24);
+  --box-shadow-lg: 0 10px 20px rgba(0, 0, 0, .12);
 
   --transition: 0.2s;
 }
@@ -195,31 +196,39 @@ a {
   }
   
   .menu-list .hamburger-item {
-    margin-bottom: 10px;
-    transition: margin-bottom 0.3s;
+    /* margin-bottom: 10px;
+    transition: margin-bottom 0.3s; */
+    margin: 0;
+    padding: 0;
   }
   
   .menu-list a {
     text-decoration: none;
     color: black;
-    padding: 6px 8px;
+    /* padding: 6px 8px; */
     display: block;
     text-align: center;
-    transition: color 0.3s, background-color 0.3s;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    /* transition: color 0.3s, background-color 0.3s; */
     line-height: 1.2;
-    border-radius: 3px;
+    /* border-radius: 3px; */
   }
   
   .menu-list a:hover {
-    color: white;
-    background-color: #777;
+    color: var(--color-primary-100);
+    background-color: var(--color-primary-700);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   }
   .menu-list a:active {
     color: white;
     background-color: #777;
-}
+  }
+  .menu-list a i,
+  .menu-list a {
+    transition-duration: var(--transition);
+  }
+  .menu-list a:hover i {
+    color: var(--color-primary-100);
+  }
   
   
   .mobile-menu {
@@ -227,7 +236,7 @@ a {
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
-    padding: 0 8px;
+    padding: 0 12px;
     width: 100%;
   }
   
@@ -243,13 +252,15 @@ a {
   .meny {
     display: none;
     position: fixed;
-    top: 50px;
+    top: 65px;
     right: 10px;
     background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    padding: 8px;
+    /* border: 1px solid #ccc; */
+    border-radius: 6px;
+    /* padding: 8px; */
     z-index: 1;
+    overflow: hidden;
+    box-shadow: var(--box-shadow-lg);
   }
   
 
@@ -270,10 +281,11 @@ a {
     color: #010101; 
     display: flex;
     align-items: center; 
+    padding: 18px 24px;
   }
   .fa-solid {
     margin-right: var(--med-padding); 
-    color:  var(--color-primary-400);
+    color:  var(--color-primary-700);
   }
   /*Knappen Donate*/
   .menu-container {
