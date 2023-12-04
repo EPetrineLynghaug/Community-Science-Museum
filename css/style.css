@@ -255,9 +255,7 @@ a {
     top: 65px;
     right: 10px;
     background-color: #fff;
-    /* border: 1px solid #ccc; */
     border-radius: 6px;
-    /* padding: 8px; */
     z-index: 1;
     overflow: hidden;
     box-shadow: var(--box-shadow-lg);
@@ -502,7 +500,9 @@ a {
 .accessibility,
 .food,
 .shop,
-.location {
+.location
+.kids
+.researchers {
   padding: var(--med-padding);
 }
 .admission-info p {
@@ -520,14 +520,41 @@ a {
   width: 100%;
   height: 250px;
 }
+/*? Explore page */
+.explore-heading {
+  margin-bottom: 20px; /* Legg til bunnmargen for å gi plass mellom overskriften og underliggende elementer */
+}
 
-/* ? Visit page / opening hours */
+.explore-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.exhibition-cards-container h2 {
+  margin-top: 20px; 
+}
+
+.exhibition-cards-container p {
+  margin-bottom: 10px;
+}
+
+.exhibition-cards-container img {
+  width: 100%;
+  max-width: 200px;
+}
+
+/* ? Visit page / opening hours / Explore */
 .opening-hours,
 .admission-info,
 .accessibility,
 .food,
 .shop,
-.location{
+.location,
+.explore,
+.teachers,
+.researchers {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -537,6 +564,53 @@ a {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Justeringer for Explore-seksjonen */
+.kids .section-container {
+  text-align: center;
+}
+
+.kids .section-heading {
+  margin-bottom: 20px;
+}
+
+.kids .exhibition-cards-container {
+  text-align: left;
+}
+
+.kids img {
+  max-width: 100%;
+  margin-top: 20px;
+}
+
+/* Justeringer for Teachers-seksjonen */
+.teachers .section-container {
+  text-align: center;
+}
+
+.teachers .section-heading {
+  margin-bottom: 20px;
+}
+
+.teachers img {
+  max-width: 100%;
+  margin-top: 20px;
+}
+
+/* Justeringer for Researchers-seksjonen */
+.researchers .section-container {
+  text-align: center;
+}
+
+.researchers .section-heading {
+  margin-bottom: 20px;
+}
+
+.researchers img {
+  max-width: 100%;
+  margin-top: 20px;
+}
+
+/* Åpningstider-liste */
 .opening-hours-list li {
   display: flex;
   align-items: center;
@@ -551,6 +625,7 @@ a {
   border-bottom: 1px solid #6BCCB1;
   color: var(--color-primary-100);
 }
+
 .opening-time {
   display: block;
   min-width: 120px;
@@ -561,27 +636,21 @@ a {
 .closed {
   color: #FC9CA2;
 }
-.opening-hours img {
-  display: block;
-  width: 100%;
-  max-width: 200px;
-  margin: 15px auto 0 auto;
-  
-}
+
+.opening-hours img,
 .accessibility img,
 .admission-info img,
 .food img,
 .shop img,
-.location img {
+.location img,
+.kids img,
+.teachers img,
+.researchers img {
   width: 100%;
   max-width: 200px;
+  margin: 15px auto 0 auto;
 }
 
-/*Explore siden*/
-.exhibition-cards-container img{
-  width: 100%;
-  max-width: 200px;
-}
 
 
 /*Donate siden*/
