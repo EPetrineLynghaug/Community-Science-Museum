@@ -397,40 +397,15 @@ a.logo img,
 
   
   /*Cards hovedsiden*/
-  /* ! sjekk om du kan fjerne dette! */
 
-  .cards, .cards-small {
-    width: 90%;
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, .12),
-                0 2px 4px rgba(0, 0, 0, .24);
-    border: 1px solid hsl( 0, 0%, 94%);
-    padding: 12px;
-    margin: 20px auto;   
-    transition-duration: 0.2s;
-  }
-  .cards-small {
-    background-color: rgb(245,245,245);
-    color: black;
-  }
-  
   .cards-news {
     display: flex;
     flex-direction: column; 
     justify-content: center;
     align-items: center;
   }
-  .cards-small {
-    display: flex;
-    flex-direction: row;
-  }
-  .cards-small > * {
-    flex: 1;
-  }
-  .cards-news img, .cards-small img {
+  
+  .cards-news img {
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
@@ -451,16 +426,6 @@ a.logo img,
     align-items: center;
   }
   
-
-  .cards:hover {
-  transform: scale(1.025);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-}
-.cards-small:hover {
-    transform: scale(1.025);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-}
-
 /*Cards på exhibition*/
 .cards-exhibitions {
   margin-bottom: 12px;
@@ -501,8 +466,7 @@ a.logo img,
 .food,
 .shop,
 .location
-.kids
-.researchers {
+.section-container {
   padding: var(--med-padding);
 }
 .admission-info p {
@@ -556,8 +520,7 @@ a.logo img,
 .shop,
 .location,
 .explore,
-.teachers,
-.researchers {
+.section-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -566,52 +529,12 @@ a.logo img,
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+.section-container.card-light {}
+.section-container.card-bg-primary-dark {}
 
-/* Justeringer for Explore-seksjonen */
-.kids .section-container {
-  text-align: center;
-}
 
-.kids .section-heading {
-  margin-bottom: 20px;
-}
 
-.kids .exhibition-cards-container {
-  text-align: left;
-}
 
-.kids img {
-  max-width: 100%;
-  margin-top: 20px;
-}
-
-/* Justeringer for Teachers-seksjonen */
-.teachers .section-container {
-  text-align: center;
-}
-
-.teachers .section-heading {
-  margin-bottom: 20px;
-}
-
-.teachers img {
-  max-width: 100%;
-  margin-top: 20px;
-}
-
-/* Justeringer for Researchers-seksjonen */
-.researchers .section-container {
-  text-align: center;
-}
-
-.researchers .section-heading {
-  margin-bottom: 20px;
-}
-
-.researchers img {
-  max-width: 100%;
-  margin-top: 20px;
-}
 
 /* Åpningstider-liste */
 .opening-hours-list li {
@@ -646,9 +569,7 @@ a.logo img,
 .food img,
 .shop img,
 .location img,
-.kids img,
-.teachers img,
-.researchers img {
+.section-container img {
   width: 100%;
   max-width: 200px;
   margin: 15px auto 0 auto;
