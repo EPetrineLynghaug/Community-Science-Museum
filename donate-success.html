@@ -3,9 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/2cbc9be9a4.js" crossorigin="anonymous"></script>
+    <title>Community Science Museum</title>
 </head>
 <body>
-    <p>Hallo WORLD</p>
+  <header>
+    <a class="logo" href="./index.html">
+      <img src="./img/logo-edited.svg" alt="logo" />
+    </a>
+  
+    <div class="menu-container">
+      <a href="./donate.html" class="btn btn-secondary">Donate</a>
+      <div class="mobile-menu">
+        <label for="hamburger-menu" class="menu-icon">
+          Menu <i class="fas fa-bars"></i>
+        </label>
+      </div>
+    </div>
+  
+    <input type="checkbox" id="hamburger-menu" />
+    <nav class="meny menu-desktop">
+      <ul class="menu-list">
+        <li class="hamburger-item">
+          <a href="./index.html" class="active">
+            <i class="fa-solid fa-house"></i> Home
+          </a>
+        </li>
+        <li class="hamburger-item">
+          <a href="./visit.html">
+            <i class="fa-solid fa-map-pin"></i> Visit
+          </a>
+        </li>
+        <li class="hamburger-item">
+          <a href="./explore.html">
+            <i class="fa-solid fa-atom"></i> Explore
+          </a>
+        </li>
+        <li class="hamburger-item">
+          <a href="./exhibition.html">
+            <i class="fa-solid fa-atom"></i> Exhibitions
+          </a>
+        </li>
+        <li class="hamburger-item">
+          <a href="./special-events.html">
+            <i class="fa-solid fa-burst"></i> Spesiale events
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="donate-page">
+    <div class="donate-card">
+        <h1 class="donate-title">Thank you!</h1>
+        <p class="donate-text">
+            We appreciate your donation.
+        </p>
+    </div>
+    <a href="./index.html" class="btn btn-tetiary">
+        Back to homepage
+    </a>
+    <img src="./img/undraw_super_thank_you_re_f8bo.svg"
+         alt="Thank you illustration"
+         class="donate-img"
+    >
+  </main>
 </body>
 </html>
