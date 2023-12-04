@@ -118,11 +118,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* position: absolute;
-    top: 0;
-    left: 0; */
     width: 100%;
 }
+
 h1,
 h2,
 h3,
@@ -162,8 +160,6 @@ strong {
   color: #555;
 }
 
-
-
 .exhibition-hero{
 position: absolute; 
   top: 50%; 
@@ -175,8 +171,6 @@ position: absolute;
   width: 100%;
   height: 50%;
 }
-
-
 
 /* ? Mobile menu */
 a {
@@ -205,12 +199,9 @@ a {
   .menu-list a {
     text-decoration: none;
     color: black;
-    /* padding: 6px 8px; */
     display: block;
     text-align: center;
-    /* transition: color 0.3s, background-color 0.3s; */
     line-height: 1.2;
-    /* border-radius: 3px; */
   }
   
   .menu-list a:hover {
@@ -394,6 +385,7 @@ a {
 
   
   /*Cards hovedsiden*/
+  /* ! sjekk om du kan fjerne dette! */
 
   .cards, .cards-small {
     width: 90%;
@@ -459,8 +451,6 @@ a {
 
 /*Cards på exhibition*/
 .cards-exhibitions {
-  /* position: relative;
-  overflow: hidden; */
   margin-bottom: 12px;
 }
 
@@ -483,8 +473,6 @@ a {
   margin-top: 6px;
 }
 .cards-exhibitions-description {
-  /* position: relative; */
-  /* z-index: 1; */
   padding: 0px 10px 24px 10px;
 }
 .cards-exhibitions-description p:first-child {
@@ -522,7 +510,7 @@ a {
 }
 /*? Explore page */
 .explore-heading {
-  margin-bottom: 20px; /* Legg til bunnmargen for å gi plass mellom overskriften og underliggende elementer */
+  margin-bottom: 20px; 
 }
 
 .explore-container {
