@@ -676,6 +676,19 @@ input[type="text"] {
   overflow: hidden;
   margin-top: -17px; 
 }
+.footer-image {
+  width: 100%;
+  height: 150px;
+}
+.footer-image img {
+  width: 100%;
+  height: 100%;
+}
+.footer-content {
+  padding: 24px;
+  background-color: var(--color-primary-700);
+  color: #fff;
+}
 
 /* .gradient-footer::before {
   content: "";
@@ -745,10 +758,19 @@ input[type="text"] {
     padding: 15px;
   }
 
+  .footer-image {
+    height: 200px;
+  }
+
 }
 
 
 /* TODO: Fix paragraphs and images + menu */
 /* ? SMALL LAPTOP MEDIA QUERY */
 @media screen and (min-width: 992px) {
+
+  .footer-image {
+    height: 250px;
+  }
+
 }
