@@ -752,7 +752,68 @@ input[type="text"] {
 /* TODO: Fix paragraphs and images + menu */
 /* ? SMALL LAPTOP MEDIA QUERY */
 @media screen and (min-width: 992px) {
+  .menu-icon,
+  #hamburger-menu {
+      display: none; 
+  }
+  
+  .menu-desktop {
+      display: flex; 
+      flex-direction: column; 
+  }
+  
+  .menu-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+  }
+  
+  .menu-item {
+      margin-bottom: 10px; 
+  }
 
+    .menu-icon {
+        display: block; 
+        cursor: pointer;
+    }
+
+    .menu-desktop {
+        display: none; 
+    }
+
+    #hamburger-menu:checked + .menu-desktop {
+        display: block; 
+    }
+}
+
+
+
+  .cards-exhibitions {
+    max-height: 400px; 
+    margin: var(--lg-padding);
+  }
+  .cards-exhibitions > * {
+    width: 50%;
+  }
+  .cards-exhibitions.card-bg-primary-dark,
+  .cards-exhibitions.card-light {
+    flex-direction: row; }
+  .cards-exhibitions.card-light {
+    flex-direction: row-reverse; }
+  .cards-exsplore-exhibitions img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+  }
+  .cards-exhibitions-description {
+    padding: 15px;
+  }
+
+  .footer-image {
+    height: 200px;
+  }
+}
   .footer-image {
     height: 250px;
   }
