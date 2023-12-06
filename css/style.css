@@ -87,6 +87,16 @@
 }
 /* Stor skygge */
 .box-shadow-lg { box-shadow: 0 10px 20px rgba(0, 0, 0, .12); }
+/* Dividers */
+.divider {
+  height: 4px;
+  margin: 12px 0;
+}
+.divider-sm { width: 33%; }
+.divider-md { width: 66%; }
+.divider-lg { width: 100%; }
+.divider.light { background-color: var(--color-primary-100); }
+.divider.dark { background-color: var(--color-primary-700); }
 
 /* Wildcard(alle objekter) */
 * {
@@ -162,10 +172,10 @@ strong {
 }
 
 .exhibition-hero{
-  position: absolute; 
+  /* position: absolute; 
   top: 50%; 
   left: 50%;
-  transform: translate(-50%, -50%); 
+  transform: translate(-50%, -50%);  */
   color: white; 
 }
 .hero-visit img{
@@ -757,8 +767,9 @@ input[type="text"] {
   .cards-exhibitions-description {
     padding: 15px;
   }
+  .cards-exhibitions-description h2,
   .cards-exhibitions-description h3 {
-    margin-bottom: 12px;
+    margin: 0;
     padding: 0;
     font-size: 26px;
     text-align: left;
@@ -874,10 +885,11 @@ input[type="text"] {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 15px;
+    padding: 42px;
   }
+  .cards-exhibitions-description h2,
   .cards-exhibitions-description h3 {
-    margin-bottom: 12px;
+    margin: 0;
     padding: 0;
     font-size: 32px;
     text-align: left;
