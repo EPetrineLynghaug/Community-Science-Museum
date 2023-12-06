@@ -757,7 +757,15 @@ input[type="text"] {
   .cards-exhibitions-description {
     padding: 15px;
   }
-
+  .cards-exhibitions-description h3 {
+    margin-bottom: 12px;
+    padding: 0;
+    font-size: 26px;
+    text-align: left;
+  }
+  .cards-exhibitions-description p {
+    font-size: 18px;
+  }
   .footer-image {
     height: 200px;
   }
@@ -797,10 +805,6 @@ input[type="text"] {
     margin: 0 15px;
   }
   
-  /* .menu-desktop {
-      display: flex; 
-      flex-direction: column; 
-  } */
   
   .menu-list {
     display: flex;
@@ -821,19 +825,31 @@ input[type="text"] {
       margin-bottom: 10px; 
   }
 
-    .menu-icon {
-        display: block; 
-        cursor: pointer;
-    }
+  .menu-icon {
+      display: block; 
+      cursor: pointer;
+  }
 
-    .menu-desktop {
-        display: none; 
-    }
+  .menu-desktop {
+      display: none; 
+  }
 
+  .hero img {
+    height: 600px;
+  }
+  .hero-title{
+    font-size: 32px;
+  }
+  .slogan {
+    font-size: 20px;
+  }
 
-  .cards-exhibitions {
+  .cards-exhibitions-container {
     display: flex;
-    flex-direction: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cards-exhibitions {
     max-width: 1400px;
     max-height: 600px;
     margin: var(--lg-padding);
@@ -855,10 +871,20 @@ input[type="text"] {
     object-position: bottom;
   }
   .cards-exhibitions-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 15px;
   }
-
-
+  .cards-exhibitions-description h3 {
+    margin-bottom: 12px;
+    padding: 0;
+    font-size: 32px;
+    text-align: left;
+  }
+  .cards-exhibitions-description p {
+    font-size: 20px;
+  }
   .footer-image {
     height: 200px;
   }
