@@ -162,7 +162,7 @@ strong {
 }
 
 .exhibition-hero{
-position: absolute; 
+  position: absolute; 
   top: 50%; 
   left: 50%;
   transform: translate(-50%, -50%); 
@@ -191,7 +191,7 @@ a {
     margin: 0;
   }
   
-  .menu-list .hamburger-item {
+  .menu-list .menu-list-item {
     margin: 0;
     padding: 0;
   }
@@ -207,7 +207,7 @@ a {
   .menu-list a:hover {
     color: var(--color-primary-100);
     background-color: var(--color-primary-700);
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); */
   }
   .menu-list a:active {
     color: white;
@@ -240,7 +240,7 @@ a {
   }
   
   
-  .meny {
+  .menu {
     display: none;
     position: fixed;
     top: 91px;
@@ -253,7 +253,7 @@ a {
   }
   
 
-  #hamburger-menu:checked + .meny { display: block; }
+  #hamburger-menu:checked + .menu { display: block; }
   #hamburger-menu { display: none; }
 
   /*
@@ -265,7 +265,7 @@ a {
 
   * Ikke ferdig
   */
-  .hamburger-item a {
+  .menu-list-item a {
     text-decoration: none;
     color: #010101; 
     display: flex;
@@ -283,7 +283,7 @@ a {
     justify-content: flex-end;
   }
   
-  .donate-btn {
+  /* .donate-btn {
     display: inline-block;
     padding: 10px 15px;
     text-decoration: none;
@@ -294,7 +294,7 @@ a {
     transition: background-color 0.3s ease;
   }
   
-  .donate-btn:hover { background-color: #6BBEC8; }
+  .donate-btn:hover { background-color: #6BBEC8; } */
 /* ? Mobile menu end */
   
 /* ! ####################################################### */
@@ -369,7 +369,7 @@ a.logo img,
 .box {
   flex: 1;
   padding: 2px;
-	transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
 .box:hover {
   flex: 3;
@@ -435,7 +435,7 @@ a.logo img,
   margin-top: 0;
 }
 
-.cards-exsplore-exhibitions img {
+.cards-explore-exhibitions img {
  width: 100%;
  height: auto;
  display: block;
@@ -528,7 +528,9 @@ a.logo img,
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.section-container.card-light {}
+.cards-exhibitions.card-light {
+  background-color: #fafafa;
+}
 .section-container.card-bg-primary-dark {}
 
 /* Åpningstider-liste */
@@ -715,6 +717,20 @@ input[type="text"] {
 }
 
 
+
+
+
+
+
+
+/* 
+? #############################
+? ####### MEDIA QUERIES #######
+? #############################
+*/
+.desktop-only { display: none; }
+
+
 /* ? TABLET MEDIA QUERY */
 @media screen and (min-width: 768px) {
 
@@ -732,7 +748,7 @@ input[type="text"] {
   .cards-exhibitions.card-light {
     flex-direction: row-reverse;
   }
-  .cards-exsplore-exhibitions img {
+  .cards-explore-exhibitions img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -752,20 +768,53 @@ input[type="text"] {
 /* TODO: Fix paragraphs and images + menu */
 /* ? SMALL LAPTOP MEDIA QUERY */
 @media screen and (min-width: 992px) {
-  .menu-icon,
-  #hamburger-menu {
+  .desktop-only { display: initial; }
+  .mobile-only { display: none; }
+
+  header {
+    justify-content: flex-end;
+  }
+  .logo {
+    flex: 1;
+    text-align: left;
+  }
+  .logo img {
+    width: auto;
+  }
+
+  .mobile-menu {
       display: none; 
   }
-  
-  .menu-desktop {
-      display: flex; 
-      flex-direction: column; 
+
+  .menu.menu-desktop {
+    display: block;
+    position: initial;
+    border-radius: 0;
+    box-shadow: 0 0 0;
+  }
+
+  .donate-btn {
+    margin: 0 15px;
   }
   
+  /* .menu-desktop {
+      display: flex; 
+      flex-direction: column; 
+  } */
+  
   .menu-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
+    display: flex;
+  }
+  .menu-list a {
+    border-bottom: 2px solid transparent;
+  }
+  .menu-list a:hover {
+    background-color: transparent !important;
+    color: var(--color-black-900);
+    border-bottom-color: var(--color-primary-700);
+  }
+  .menu-list a:hover i {
+    color: var(--color-primary-700);
   }
   
   .menu-item {
@@ -781,15 +830,12 @@ input[type="text"] {
         display: none; 
     }
 
-    #hamburger-menu:checked + .menu-desktop {
+    /* #hamburger-menu:checked + .menu-desktop {
         display: block; 
-    }
-}
-
-
+    } */
 
   .cards-exhibitions {
-    max-height: 400px; 
+  /*  max-height: 400px;*/ 
     margin: var(--lg-padding);
   }
   .cards-exhibitions > * {
@@ -800,7 +846,7 @@ input[type="text"] {
     flex-direction: row; }
   .cards-exhibitions.card-light {
     flex-direction: row-reverse; }
-  .cards-exsplore-exhibitions img {
+  .cards-explore-exhibitions img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -813,7 +859,7 @@ input[type="text"] {
   .footer-image {
     height: 200px;
   }
-}
+
   .footer-image {
     height: 250px;
   }
