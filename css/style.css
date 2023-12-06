@@ -566,23 +566,6 @@ a {
   margin-bottom: 12px;
 }
 
-
-/* .donate-button {
-  background-color: var(--color-primary-100);
-  color: #fff;
-  padding: 10px;
-  text-decoration: none; 
-  display: inline-block; 
-  width: 100%;
-  box-sizing: border-box;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-} */
-/* .donate-button:hover {
-  background-color: #45a049;
-} */
-
 /*Tekst på donate siden.*/
 .volunteering,
 .support,
@@ -882,6 +865,5 @@ a {
   .footer-image {
     height: 200px;
   }
-
 
 }
