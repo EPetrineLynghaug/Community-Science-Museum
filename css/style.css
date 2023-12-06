@@ -29,7 +29,7 @@
 /* ? Globale klasser */
 .input {
   width: 100%;
-  padding: 14px 18px;
+  padding: 12px 18px;
   margin: 12px 0;
   font-size: 16px;
   border: 0;
@@ -172,9 +172,9 @@ form {
   display: flex;
   flex-direction: column;
 }
-label {
+/* label {
   margin-top: 10px;
-}
+} */
 ul {
   list-style: none;
   padding: 0;
@@ -520,6 +520,9 @@ a {
 }
 
 /*Donate siden*/
+.donation-page {
+  padding: 15px;
+}
 .donation-card {
   width: 100%;
   max-width: 800px;
@@ -730,6 +733,14 @@ a {
   }
   .donation-card-actions-input input {
     margin: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border: 2px solid var(--color-primary-700);
+  }
+  .donation-card-btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-color: var(--color-primary-700);
   }
 
 }
