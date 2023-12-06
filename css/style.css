@@ -192,8 +192,6 @@ a {
   }
   
   .menu-list .hamburger-item {
-    /* margin-bottom: 10px;
-    transition: margin-bottom 0.3s; */
     margin: 0;
     padding: 0;
   }
@@ -399,7 +397,7 @@ a.logo img,
   
   /*Cards hovedsiden*/
 
-  .cards-news {
+ /* .cards-news {
     display: flex;
     flex-direction: column; 
     justify-content: center;
@@ -425,7 +423,7 @@ a.logo img,
   }
   .cards-news-small {
     align-items: center;
-  }
+  }*/
   
 /*Cards på exhibition*/
 .cards-exhibitions {
@@ -533,10 +531,6 @@ a.logo img,
 .section-container.card-light {}
 .section-container.card-bg-primary-dark {}
 
-
-
-
-
 /* Åpningstider-liste */
 .opening-hours-list li {
   display: flex;
@@ -575,8 +569,6 @@ a.logo img,
   max-width: 200px;
   margin: 15px auto 0 auto;
 }
-
-
 
 /*Donate siden*/
 .donation-card {
@@ -691,15 +683,6 @@ input[type="text"] {
   color: #fff;
 }
 
-/* .gradient-footer::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: linear-gradient(to right top, rgba(127, 555, 212, 0), rgba(250, 250, 250, 0));
-} */
 
 .donate-page {
   padding: 15px;
