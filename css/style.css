@@ -171,13 +171,6 @@ strong {
   color: #555;
 }
 
-.exhibition-hero{
-  /* position: absolute; 
-  top: 50%; 
-  left: 50%;
-  transform: translate(-50%, -50%);  */
-  color: white; 
-}
 .hero-visit img{
   width: 100%;
   height: 50%;
@@ -217,7 +210,6 @@ a {
   .menu-list a:hover {
     color: var(--color-primary-100);
     background-color: var(--color-primary-700);
-    /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); */
   }
   .menu-list a:active {
     color: white;
@@ -293,18 +285,6 @@ a {
     justify-content: flex-end;
   }
   
-  /* .donate-btn {
-    display: inline-block;
-    padding: 10px 15px;
-    text-decoration: none;
-    color: var(--color-black);
-    background-color: var(--color-primary-400); 
-    border: 1px solid var(--color-black);
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .donate-btn:hover { background-color: #6BBEC8; } */
 /* ? Mobile menu end */
   
 /* ! ####################################################### */
@@ -363,9 +343,9 @@ a.logo img,
 }
 .hero-explore-exhibition img{
   width: 100%;
-  height: 200px;
+  height: 300px;
   object-fit: cover;
-  
+  object-position: bottom;
 }
 .css-carousel-container {
   width: 100%;
@@ -404,36 +384,6 @@ a.logo img,
   background-color: var(--color-primary-700);
 }
 
-  
-  /*Cards hovedsiden*/
-
- /* .cards-news {
-    display: flex;
-    flex-direction: column; 
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .cards-news img {
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    box-shadow:0 3px 6px rgba(0, 0, 0, .12),
-    0 2px 4px rgba(0, 0, 0, .24);
-  }
-  
-  .cards-news-description, .cards-news-description-small {
-    text-align: center;
-    margin: 10px;
-  }
-  .cards-news {
-    align-items: center;
-  }
-  .cards-news-small {
-    align-items: center;
-  }*/
   
 /*Cards på exhibition*/
 .cards-exhibitions {
@@ -663,7 +613,7 @@ input[type="text"] {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 10vh; /* Er vh en god ide her? det må du sjekke mer opp i. */
+  height: 10vh; 
 }
 .color-icon i{
   padding: 0;
