@@ -1,129 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Donate to Community Science Museum" />
-    <meta name="author" content="Petrine Lynghaug">
-    <link rel="stylesheet" href="./css/style.css">
-    <script src="https://kit.fontawesome.com/2cbc9be9a4.js" crossorigin="anonymous"></script>
-    <title>Donate|Community Science Museum</title>
-</head>
-<body>
-  <header>
-    <div class="logo">
-      <a href="./index.html">
-        <img src="./img/logo-edited.svg" alt="logo" />
-      </a>
-    </div>
-  
-    <div class="menu-container">
-      <a href="./donate.html" class="mobile-only btn btn-secondary">Donate</a>
-      <div class="mobile-menu">
-        <label for="hamburger-menu" class="menu-icon">
-          Menu <i class="fas fa-bars"></i>
-        </label>
+    <meta name="author" content="Petrine Lynghaug" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/2cbc9be9a4.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Donate | Community Science Museum</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="./index.html">
+          <img src="./img/logo-edited.svg" alt="logo" />
+        </a>
       </div>
-    </div>
-  
-    <input type="checkbox" id="hamburger-menu" />
-    <nav class="menu menu-desktop">
-      <ul class="menu-list">
-        <li class="menu-list-item">
-          <a href="./index.html" class="active">
-            <i class="fa-solid fa-house"></i> Home
-          </a>
-        </li>
-        <li class="menu-list-item">
-          <a href="./visit.html">
-            <i class="fa-solid fa-map-pin"></i> Visit
-          </a>
-        </li>
-        <li class="menu-list-item">
-          <a href="./explore.html">
-            <i class="fa-solid fa-atom"></i> Explore
-          </a>
-        </li>
-        <li class="menu-list-item">
-          <a href="./exhibition.html">
-            <i class="fa-solid fa-atom"></i> Exhibitions
-          </a>
-        </li>
-        <li class="menu-list-item">
-          <a href="./special-events.html">
-            <i class="fa-solid fa-burst"></i> Special events
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <a href="./donate.html" class="desktop-only donate-btn btn btn-secondary">Donate</a>
-  </header>
-<main class="donation-page">
-    <div class="donation-card">
+
+      <div class="menu-container">
+        <a href="./donate.html" class="mobile-only btn btn-secondary">Donate</a>
+        <div class="mobile-menu">
+          <label for="hamburger-menu" class="menu-icon">
+            Menu <i class="fas fa-bars"></i>
+          </label>
+        </div>
+      </div>
+
+      <input type="checkbox" id="hamburger-menu" />
+      <nav class="menu menu-desktop">
+        <ul class="menu-list">
+          <li class="menu-list-item">
+            <a href="./index.html" class="active">
+              <i class="fa-solid fa-house"></i> Home
+            </a>
+          </li>
+          <li class="menu-list-item">
+            <a href="./visit.html">
+              <i class="fa-solid fa-map-pin"></i> Visit
+            </a>
+          </li>
+          <li class="menu-list-item">
+            <a href="./explore.html">
+              <i class="fa-solid fa-atom"></i> Explore
+            </a>
+          </li>
+          <li class="menu-list-item">
+            <a href="./exhibition.html">
+              <i class="fa-solid fa-atom"></i> Exhibitions
+            </a>
+          </li>
+          <li class="menu-list-item">
+            <a href="./special-events.html">
+              <i class="fa-solid fa-burst"></i> Special events
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <a href="./donate.html" class="desktop-only donate-btn btn btn-secondary"
+        >Donate</a
+      >
+    </header>
+
+    <main class="donation-page">
+      <h1>Donations & Volunteering</h1>
+      <div class="donation-card">
         <h2>Donate Now</h2>
         <form action="#" method="post">
-            <label for="donation-amount">Select Donation Amount:</label>
-            <div class="donation-options">
-             <div>
-               <input type="radio" id="amount-10" name="donation-amount" value="10">
-               <label for="amount-10">$10</label>
-             </div>
-                <div>
-                  <input type="radio" id="amount-25" name="donation-amount" value="25">
-                  <label for="amount-25">$25</label>
-                </div>
-                <div>
-                  <input type="radio" id="amount-50" name="donation-amount" value="50">
-                  <label for="amount-50">$50</label>
-                </div>
+          <!-- <label for="donation-amount">Select Donation Amount:</label> -->
+          <div class="donation-options">
+            <div>
+              <input
+                type="radio"
+                id="amount-10"
+                name="donation-amount"
+                value="10"
+              />
+              <label for="amount-10">$10 USD</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="amount-25"
+                name="donation-amount"
+                value="25"
+              />
+              <label for="amount-25">$25 USD</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="amount-50"
+                name="donation-amount"
+                value="50"
+              />
+              <label for="amount-50">$50 USD</label>
+            </div>
+          </div>
+
+          <div class="divider divider-lg light"></div>
+
+          <div class="donation-card-actions">
+            <div class="donation-card-actions-input">
+              <label for="custom-amount">Or Enter Custom Amount:</label>
+              <input
+                type="text"
+                class="input"
+                id="custom-amount"
+                name="custom-amount"
+                placeholder="Enter custom amount"
+              />
             </div>
 
-            <div class="donation-card-actions">
-              <div class="donation-card-actions-input">
-                <label for="custom-amount">Or Enter Custom Amount:</label>
-                <input type="text" class="input" id="custom-amount" name="custom-amount" placeholder="Enter custom amount">
-              </div>
-
-              <a href="./donate-success.html" class="btn btn-basic donation-card-btn">Donate Now</a>
-            </div>
+            <a
+              href="./donate-success.html"
+              class="btn btn-basic donation-card-btn"
+              >Donate Now</a
+            >
+          </div>
         </form>
-    </div>
-
-    <section class="support">
-      <div class="icon-container">
-      <div class="color-icon"><i class="fa-solid fa-info"></i></div>
       </div>
+
+      <section class="support">
+        <div class="icon-container">
+          <div class="color-icon">
+            <i class="fa-solid fa-info"></i>
+          </div>
+        </div>
         <h2>Support</h2>
-        <p>There are various ways you can support the museum. Donations are very welcome and are an important way we keep this museum open and accessible to the whole community. 
+        <p>
+          There are various ways you can support the museum. Donations are very
+          welcome and are an important way we keep this museum open and
+          accessible to the whole community.
         </p>
-        <p>You can also support us by donating items of interest to the museum’s collections. If you have some item or collection that you think others would enjoy, please let us know by contacting our Collections Department and they will be able to assist you.
+        <p>
+          You can also support us by donating items of interest to the museum’s
+          collections. If you have some item or collection that you think others
+          would enjoy, please let us know by contacting our Collections
+          Department and they will be able to assist you.
         </p>
-    </section>
+      </section>
 
-    <section class="volunteering">
-      <div class="icon-container">
-      <div class="color-icon"><i class="fa-solid fa-users"></i></div> 
-      </div>
-      <h2>Volunteering</h2>
-      <p>A number of people volunteer their time and effort to keep the displays in good order and ready for visitors to come and enjoy. Volunteering has its perks including getting to see behind the scenes of a working museum, access to staff-only lectures, and a monthly lunch where all staff and volunteers come together to discuss ideas for future exhibits and strategies for the museum.
-      </p>
-      <p>
-        You can help volunteer in a number of different spheres. Please contact us if you'd like to find out more about how you can get involved.
-      </p>
-    </section>
+      <section class="volunteering">
+        <div class="icon-container">
+          <div class="color-icon">
+            <i class="fa-solid fa-users"></i>
+          </div>
+        </div>
+        <h2>Volunteering</h2>
+        <p>
+          A number of people volunteer their time and effort to keep the
+          displays in good order and ready for visitors to come and enjoy.
+          Volunteering has its perks including getting to see behind the scenes
+          of a working museum, access to staff-only lectures, and a monthly
+          lunch where all staff and volunteers come together to discuss ideas
+          for future exhibits and strategies for the museum.
+        </p>
+        <p>
+          You can help volunteer in a number of different spheres. Please
+          contact us if you'd like to find out more about how you can get
+          involved.
+        </p>
+      </section>
 
-    <section class="internships">
-      <div class="icon-container">
-      <div class="color-icon"><i class="fa-solid fa-book"></i></div>
-      </div>
-      <h2>Internships</h2>
-      <p>Are you interested in working in a museum? Do you enjoy the fun and excitement of sharing the wonders of nature with people? Well you could be just the right person to enjoy an internship at the museum.
-      </p>
-      <p>Are you interested in working in a museum? Do you enjoy the fun and excitement of sharing the wonders of nature with people? Well you could be just the right person to enjoy an internship at the museum.
-      </p>
-    </section>
-</main>
-<footer class="footer"></footer>
-
-</body>
+      <section class="internships">
+        <div class="icon-container">
+          <div class="color-icon">
+            <i class="fa-solid fa-book"></i>
+          </div>
+        </div>
+        <h2>Internships</h2>
+        <p>
+          Are you interested in working in a museum? Do you enjoy the fun and
+          excitement of sharing the wonders of nature with people? Well you
+          could be just the right person to enjoy an internship at the museum.
+        </p>
+        <p>
+          Are you interested in working in a museum? Do you enjoy the fun and
+          excitement of sharing the wonders of nature with people? Well you
+          could be just the right person to enjoy an internship at the museum.
+        </p>
+      </section>
+    </main>
+    <footer class="footer"></footer>
+  </body>
 </html>
