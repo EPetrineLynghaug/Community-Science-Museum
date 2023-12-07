@@ -18,7 +18,8 @@
 
   --color-primary-100: #DFFFF5;
   --color-primary-400: #7FFFD4;
-  --color-primary-700: #56988E;
+  /* --color-primary-700: #56988E; */
+  --color-primary-700: #41726B;
 
   --transparent-light: hsla(0, 0%, 0%, .1);
 
@@ -175,9 +176,7 @@ form {
   display: flex;
   flex-direction: column;
 }
-/* label {
-  margin-top: 10px;
-} */
+
 ul {
   list-style: none;
   padding: 0;
@@ -574,9 +573,8 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* height: 10vh;  */
 }
-.color-icon i{
+.color-icon i {
   padding: 0;
   margin: 0;
   color: var(--color-primary-100);
@@ -651,7 +649,6 @@ a {
 
   .cards-exhibitions {
     display: flex;
-    /* max-height: 400px; */
     margin: var(--padding-lg);
   }
   .cards-exhibitions > * {
