@@ -457,6 +457,9 @@ a {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+.section-container {
+  width: 100%;
+}
 .cards-exhibitions.card-light {
   background-color: #fafafa;
 }
@@ -467,13 +470,14 @@ a {
   align-items: center;
   justify-content: center;
   margin-bottom: 15px;
+  font-size: 18px;
 }
 
 .opening-days {
   display: block;
   min-width: 120px;
   text-align: right;
-  border-bottom: 1px solid #6BCCB1;
+  border-bottom: 1px solid var(--color-primary-600);
   color: var(--color-primary-100);
 }
 
@@ -481,11 +485,13 @@ a {
   display: block;
   min-width: 120px;
   text-align: left;
-  border-bottom: 1px solid #6BCCB1;
+  border-bottom: 1px solid var(--color-primary-600);
 }
 
 .closed {
-  color: #FC9CA2;
+  color: #ff6584;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .explore-title {
@@ -742,9 +748,6 @@ a {
   .explore-title {
     margin: 48px 0;
   }
-  .section-container {
-    width: 100%;
-  }
   .section-heading {
     padding: 0;
     text-align: left;
@@ -850,7 +853,14 @@ a {
     text-align: left;
   }
   .opening-hours .illustration-card-content {
+    flex: 1;
     align-items: center;
+  }
+  .opening-hours .illustration-card-image {
+    flex: 1;
+  }
+  .opening-hours .illustration-card-image img {
+    max-width: 425px;
   }
   .illustration-card-image {
     flex: 1;
@@ -860,7 +870,7 @@ a {
     justify-content: center;
   }
   .illustration-card-image img {
-    width: 100%;
+    /* width: 100%; */
     max-width: none;
     height: 100%;
   }
