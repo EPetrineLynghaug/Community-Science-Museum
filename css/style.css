@@ -377,9 +377,16 @@ a {
   margin-top: 0;
 }
 /*VISIT*/
-.visit{
+.visit {
   line-height: 1.6;
   margin-bottom: 20px;
+}
+.location-map {
+  width: 100%;
+  height: 300px;
+  max-width: none;
+  border: none;
+  border-radius: 6px;
 }
 
 .admission-info,
@@ -396,7 +403,7 @@ a {
   color: #333;
   margin-bottom: 15px;
 }
-.map {
+/* .map {
   display: flex;
   justify-content: center;
   padding: var(--padding-md);
@@ -404,7 +411,7 @@ a {
 .map iframe {
   width: 100%;
   height: 250px;
-}
+} */
 /*? Explore page */
 .explore-heading {
   margin-bottom: 20px; 
@@ -486,6 +493,12 @@ a {
 }
 .section-container {
   max-width: 1400px;
+}
+.section-container > * {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .illustration-card-content {
   padding: var(--padding-sm);
@@ -628,7 +641,8 @@ a {
 
 
 .donate-page,
-.explore-page {
+.explore-page,
+.visit-page {
   padding: 15px;
   display: flex;
   flex-direction: column;
@@ -835,6 +849,9 @@ a {
     padding: 24px 24px 32px 24px;
     text-align: left;
   }
+  .opening-hours .illustration-card-content {
+    align-items: center;
+  }
   .illustration-card-image {
     flex: 1;
     padding: var(--padding-lg);
@@ -892,6 +909,13 @@ a {
   }
   .footer-image {
     height: 200px;
+  }
+
+  .section-container.location .illustration-card-content {
+    flex: 1;
+  }
+  .section-container.location .illustration-card-image {
+    flex: 2;
   }
 
 }
