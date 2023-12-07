@@ -4,8 +4,9 @@
 
 /* ? Variabler */
 :root{
-  --med-padding: 15px;
-  --lg-padding: 24px;
+  --padding-sm: 8px;
+  --padding-md: 15px;
+  --padding-lg: 24px;
 
   --color-white-100: hsl(0, 0%, 96%);
   --color-white-200: hsl(0, 0%, 90%);
@@ -280,7 +281,7 @@ a {
     padding: 12px 18px;
   }
   .fa-solid {
-    margin-right: var(--med-padding); 
+    margin-right: var(--padding-md); 
     color:  var(--color-primary-700);
   }
   /*Knappen Donate*/
@@ -381,7 +382,7 @@ a {
 .shop,
 .location
 .section-container {
-  padding: var(--med-padding);
+  padding: var(--padding-md);
 }
 .admission-info p {
   font-size: 16px;
@@ -392,7 +393,7 @@ a {
 .map {
   display: flex;
   justify-content: center;
-  padding: var(--med-padding);
+  padding: var(--padding-md);
 }
 .map iframe {
   width: 100%;
@@ -637,13 +638,6 @@ a {
   margin-top: 100px;
 }
 
-
-
-
-
-
-
-
 /* 
 ? #############################
 ? ####### MEDIA QUERIES #######
@@ -658,7 +652,7 @@ a {
   .cards-exhibitions {
     display: flex;
     /* max-height: 400px; */
-    margin: var(--lg-padding);
+    margin: var(--padding-lg);
   }
   .cards-exhibitions > * {
     width: 50%;
@@ -795,7 +789,7 @@ a {
   .cards-exhibitions {
     max-width: 1400px;
     max-height: 600px;
-    margin: var(--lg-padding);
+    margin: var(--padding-lg);
   }
   .cards-exhibitions > * {
     width: 50%;
