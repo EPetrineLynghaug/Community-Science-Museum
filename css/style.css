@@ -172,6 +172,9 @@ h2 {
   margin-top: 15px;
   text-align: center;
 }
+p {
+  max-width: 700px;
+}
 form {
   display: flex;
   flex-direction: column;
@@ -472,6 +475,10 @@ a {
 
 .closed {
   color: #FC9CA2;
+}
+
+.section-container {
+  max-width: 1400px;
 }
 
 .opening-hours img,
@@ -776,6 +783,11 @@ a {
   }
   .slogan {
     font-size: 20px;
+  }
+
+  .section-container {
+    display: flex;
+    flex-direction: row;
   }
 
   .cards-exhibitions-container {
