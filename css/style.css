@@ -489,7 +489,7 @@ a {
 }
 
 .closed {
-  color: #ff6584;
+  color: #ff6584; /* TODO: Fix contrast error */
   font-weight: 700;
   text-transform: uppercase;
 }
