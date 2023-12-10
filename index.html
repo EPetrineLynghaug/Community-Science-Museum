@@ -60,9 +60,29 @@
 
   <main>
     <div class="hero">
-      <img src="./img/scott-webb-102825_11zon.jpg"
+      <picture>
+        <!-- DESKTOP -->
+        <source media="(min-width:768px)"
+                srcset="./img/webp/hero-desktop.webp"
+                type="image/webp"
+        >
+        <source media="(min-width:768px)"
+                srcset="./img/jpg/hero-desktop.jpg"
+                type="image/jpg"
+        >
+        <!-- MOBILE -->
+        <source srcset="./img/webp/hero-mobile.webp"
+                type="image/webp"
+        >
+        <!-- FALLBACK -->
+        <img src="./img/jpg/hero-mobile.jpg"
+              alt="A modern museum, harmonizing clean lines and glass, invites art exploration in a sleek space."
+              type="image/jpg"
+        >
+      </picture>
+      <!-- <img src="./img/scott-webb-102825_11zon.jpg"
            alt="A modern museum, harmonizing clean lines and glass, invites art exploration in a sleek space.c."
-      >
+      > -->
       <div class="hero-overlay">
         <h1 class="hero-title">
           Community Science Museum
