@@ -146,9 +146,26 @@
 
       <div class="cards-exhibitions card-bg-primary-dark">
         <div class="cards-explore-exhibitions">
-          <img src="./img/evgeniy-alyoshin-2ASQyjafflo-unsplash.JPG"
-               alt="A solar panel and a hard hat—power and protection in one frame"
-          >
+                    <picture>
+            <!-- DESKTOP -->
+            <source media="(min-width:768px)"
+                    srcset="./img/webp/helmet-desktop.webp"
+                    type="image/webp"
+            >
+            <source media="(min-width:768px)"
+                    srcset="./img/jpg/helmet-desktop.jpg"
+                    type="image/jpg"
+            >
+            <!-- MOBILE -->
+            <source srcset="./img/webp/helmet-mobile.webp"
+                    type="image/webp"
+            >
+            <!-- FALLBACK -->
+            <img src="./img/jpg/helmet-mobile.jpg"
+                 alt="A solar panel and a hard hat—power and protection in one frame."
+                 type="image/jpg"
+            >
+          </picture>
         </div>
         <div class="cards-exhibitions-description">
           <h3>Energetica Exhibition on Loan</h3>
