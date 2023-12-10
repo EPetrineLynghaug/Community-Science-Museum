@@ -11,9 +11,9 @@
 </head>
 <body>
   <header>
-    <div class="logo">
+    <div class="branding">
       <a href="./index.html">
-      <img src="./img/logo-edited.svg" alt="logo" />
+      <img src="./img/svg/logo.svg" alt="logo" />
     </a>
     </div>
   
@@ -54,13 +54,15 @@
     <a href="./donate.html" class="desktop-only donate-btn btn btn-secondary">Donate</a>
   </header>
   <main>
-      <section class="cards-exhibitions-container">
-        <h1>Exhibitions</h1>
+      <section class="image-card-container">
+        <h1 class="section-title">Exhibitions</h1>
 
-        <div class="cards-exhibitions card-bg-primary-dark">
-          <div class="cards-explore-exhibitions">
+        <div class="image-card card-bg-primary-dark">
+          <div class="card-image-column">
             <picture>
-              <!-- DESKTOP -->
+              <!--
+                ? DESKTOP
+              -->
               <source media="(min-width:768px)"
                       srcset="./img/webp/cosmology-desktop.webp"
                       type="image/webp"
@@ -69,11 +71,11 @@
                       srcset="./img/jpg/cosmology-desktop.jpg"
                       type="image/jpg"
               >
-              <!-- MOBILE -->
+              <!-- ? MOBILE -->
               <source srcset="./img/webp/cosmology-mobile.webp"
                       type="image/webp"
               >
-              <!-- FALLBACK -->
+              <!-- ? FALLBACK -->
               <img src="./img/jpg/cosmology-mobile.jpg"
                    alt="Under the stars: A boy sits on a road, holding a flashlight, surrounded by the magic of the night."
                    type="image/jpg"
@@ -82,7 +84,7 @@
               >
             </picture>
           </div>
-          <div class="cards-exhibitions-description">
+          <div class="image-card-description">
             <h2>Cosmology</h2>
             <div class="divider divider-md light desktop-only"></div>
             <p>Explore the wonders of our cosmos. Our fantastic exhibition, 'The Sky Above Us', 
@@ -94,8 +96,8 @@
           </div>
         </div>
 
-        <div class="cards-exhibitions card-light">
-          <div class="cards-explore-exhibitions">
+        <div class="image-card card-light">
+          <div class="card-image-column">
             <picture>
               <!-- DESKTOP -->
               <source media="(min-width:768px)"
@@ -119,7 +121,7 @@
               >
             </picture>
           </div>
-          <div class="cards-exhibitions-description">
+          <div class="image-card-description">
             <h2>Evolution</h2>
             <div class="divider divider-md dark desktop-only"></div>
             <p>From micro-organisms to the human body, major breakthroughs in biology are offering us unique insights into the great wonders of the tiny world.</p> 
@@ -128,8 +130,8 @@
           </div>
         </div>
 
-        <div class="cards-exhibitions card-bg-primary-dark">
-          <div class="cards-explore-exhibitions">
+        <div class="image-card card-bg-primary-dark">
+          <div class="card-image-column">
             <picture>
               <!-- DESKTOP -->
               <source media="(min-width:768px)"
@@ -153,7 +155,7 @@
               >
             </picture>
           </div>
-          <div class="cards-exhibitions-description">
+          <div class="image-card-description">
             <h2>Biology and Medicine</h2>
             <div class="divider divider-md light desktop-only"></div>
             <p>For centuries, philosophers and scientists have wrestled with the question of our origins. Where do we come from and how did we get here?</p>
@@ -162,8 +164,8 @@
           </div>
         </div>
 
-        <div class="cards-exhibitions card-light">
-          <div class="cards-explore-exhibitions">
+        <div class="image-card card-light">
+          <div class="card-image-column">
             <picture>
               <!-- DESKTOP -->
               <source media="(min-width:768px)"
@@ -187,7 +189,7 @@
               >
             </picture>
           </div>
-          <div class="cards-exhibitions-description">
+          <div class="image-card-description">
             <h2>Robotics and AI</h2>
             <div class="divider divider-md dark desktop-only"></div>
             <p>Robots have been part of our lives for a well over a hundred years.</p>
@@ -196,8 +198,8 @@
           </div>
         </div>
 
-        <div class="cards-exhibitions card-bg-primary-dark">
-          <div class="cards-explore-exhibitions">
+        <div class="image-card card-bg-primary-dark">
+          <div class="card-image-column">
             <picture>
               <!-- DESKTOP -->
               <source media="(min-width:768px)"
@@ -221,7 +223,7 @@
               >
             </picture>
           </div>
-          <div class="cards-exhibitions-description">
+          <div class="image-card-description">
             <h2>Ecology</h2>
             <div class="divider divider-md light desktop-only"></div>
             <p>As we learn more and more of the impact humans are having on the planet, the more important it becomes that scientists explore how to create a sustainable future not just for humans but for the whole planet.</p>
@@ -235,7 +237,7 @@
 
 
   <footer class="footer">
-    <div class="wavy-line"></div>
+    <div class="footer-wavy-line"></div>
     <div class="footer-content">
 
       <div class="footer-row">
@@ -283,9 +285,9 @@
           <div class="divider divider-sm light"></div>
           <p>Subscribe to our newsletter for insider access to upcoming events, captivating exhibits, and hands-on activities that spark curiosity and learning.</p>
 
-          <div class="donation-card-actions-input newsletter-container">
+          <div class="info-card-actions-input newsletter-container">
             <input type="email" name="email" id="newsletter" placeholder="Email" class="input">
-            <a href="./subscribe.html" class="btn btn-basic donation-card-btn">
+            <a href="./subscribe.html" class="btn btn-basic form-submit-btn">
               Subscribe
             </a>
           </div> <!-- action-row -->

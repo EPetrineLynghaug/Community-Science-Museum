@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
 
-/* ! REMEMBER: Refactoring! */
-
-/* ? Variabler */
+/*Global styles*/
 :root {
+  --margin-none: 0;
+  --margin-sm: 8px;
+  --margin-md: 15px;
+  --margin-lg: 24px;
+
+  --padding-none: 0;
   --padding-sm: 8px;
   --padding-md: 15px;
   --padding-lg: 24px;
@@ -13,8 +17,8 @@
   --color-white-300: hsl(0, 0%, 83%);
   --color-white-400: hsl(0, 0%, 72%);
 
-  --color-black-900: hsl(0,0%, 20%);
-  --color-black:     hsl(0,0%, 0%);
+  --color-black-700: hsl(0, 0%, 20%);
+  --color-black-900: hsl(0, 0%, 0%);
 
   --color-primary-100: #DFFFF5;
   --color-primary-400: #7FFFD4;
@@ -27,19 +31,18 @@
   --box-shadow-md: 0 6px 10px rgba(0, 0, 0, .12), 0 3px 6px rgba(0, 0, 0, .24);
   --box-shadow-lg: 0 10px 20px rgba(0, 0, 0, .12);
 
+  --mask: radial-gradient(167.71px at 50% 225.00px,#000 99%,#0000 101%) calc(50% - 150px) 0/300px 100%,
+    radial-gradient(167.71px at 50% -150px,#0000 99%,#000 101%) 50% 75px/300px 100% repeat-x;
+
   --transition: 0.2s;
 }
 
-/* ? Globale klasser */
-.wavy-line {
+.footer-wavy-line {
   width: 100%;
   height: 150px;
   background-color: var(--color-primary-700);
-  --mask:
-    radial-gradient(167.71px at 50% 225.00px,#000 99%,#0000 101%) calc(50% - 150px) 0/300px 100%,
-    radial-gradient(167.71px at 50% -150px,#0000 99%,#000 101%) 50% 75px/300px 100% repeat-x;
+  mask: var(--mask);
   -webkit-mask: var(--mask);
-          mask: var(--mask);
 }
 .input {
   width: 100%;
@@ -108,19 +111,15 @@
   color: var(--color-white-100);
 }
 .card-bg-primary-dark h2 { color: var(--color-primary-100); }
-/* Liten skygge */
 .box-shadow-sm {
   box-shadow: 0 3px 6px rgba(0, 0, 0, .12),
               0 2px 4px rgba(0, 0, 0, .24);
 }
-/* Mellom stor skygge */
 .box-shadow-md {
   box-shadow: 0 6px 10px rgba(0, 0, 0, .12),
               0 3px 6px rgba(0, 0, 0, .24);
 }
-/* Stor skygge */
 .box-shadow-lg { box-shadow: 0 10px 20px rgba(0, 0, 0, .12); }
-/* Dividers */
 .divider {
   height: 4px;
   margin: 12px 0;
@@ -130,12 +129,15 @@
 .divider-lg { width: 100%; }
 .divider.light { background-color: var(--color-primary-100); }
 .divider.dark { background-color: var(--color-primary-700); }
+.fa-solid {
+  margin-right: var(--padding-md); 
+  color:  var(--color-primary-700);
+}
 
-/* Wildcard(alle objekter) */
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  margin: var(--margin-none);
+  padding: var(--padding-none);
 }
 *::selection {
   background-color: var(--color-primary-600);
@@ -146,7 +148,7 @@ body{
   flex-direction: column;
   min-height: 100vh;
   background-color: #fafafa;
-  color: var(--color-black-900);
+  color: var(--color-black-700);
   font-family: 'Roboto', sans-serif;
 }
 main {
@@ -161,14 +163,13 @@ header {
   background-color: hsla(0, 0%, 100%,0.85 );
   color: black;
   height: 90px;
-  padding: 0;
+  padding: var(--padding-none);
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   box-shadow: var(--box-shadow-sm);
 }
-
 h1,
 h2,
 h3,
@@ -193,10 +194,9 @@ form {
   display: flex;
   flex-direction: column;
 }
-
 ul {
   list-style: none;
-  padding: 0;
+  padding: var(--padding-none);
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -208,166 +208,213 @@ strong {
   margin-right: 10px;
   color: #555;
 }
+a { /* TODO: Fix link styling + link:hover styling */
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+}
 
-/* ? Mobile menu */
-/* TODO: Fix link styling + link:hover styling */
-a {
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: white;
-  }
-  
- 
-  .menu-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .menu-list .menu-list-item {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .menu-list a {
-    text-decoration: none;
-    color: black;
-    display: block;
-    text-align: center;
-    line-height: 1.2;
-  }
-  
-  .menu-list a:hover {
-    color: var(--color-primary-100);
-    background-color: var(--color-primary-700);
-  }
-  .menu-list a:active {
-    color: white;
-    background-color: #777;
-  }
-  .menu-list a i,
-  .menu-list a {
-    transition-duration: var(--transition);
-  }
-  .menu-list a:hover i {
-    color: var(--color-primary-100);
-  }
-  
-  
-  .mobile-menu {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 0 24px;
-    width: 100%;
-  }
-  
-  .menu-icon {
-    display: block;
-    cursor: pointer;
-    font-size: 24px;
-    z-index: 1;
-    margin: auto 3px;
-  }
-  
-  
-  .menu {
-    display: none;
-    position: fixed;
-    top: 91px;
-    right: 0;
-    background-color: #fff;
-    border-radius: 6px 0 0 6px;
-    z-index: 1;
-    overflow: hidden;
-    box-shadow: var(--box-shadow-lg);
-  }
-  
-  #hamburger-menu:checked + .menu { display: block; }
-  #hamburger-menu { display: none; }
 
-  .menu-list-item a {
-    text-decoration: none;
-    color: #010101; 
-    display: flex;
-    align-items: center; 
-    padding: 12px 18px;
-  }
-  .fa-solid {
-    margin-right: var(--padding-md); 
-    color:  var(--color-primary-700);
-  }
-  /*Knappen Donate*/
-  .menu-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-/* ? Mobile menu end */
-  
-/* ! ####################################################### */
-  
-/* ? Bilder */
-.logo {
+/* Navbar*/
+.branding {
   height: 100%;
   padding: 12px 0;
 }
-.logo img {
+.branding img {
   height: 100%;
   width: 100%;
   margin-left: 10px;
   margin-right: 10px;
   object-fit: contain;
 }
+.menu-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.menu-list {
+  list-style-type: none;
+  padding: var(--padding-none);
+  margin: var(--margin-none);
+}
+.menu-list .menu-list-item {
+  margin: var(--margin-none);
+  padding: var(--padding-none);
+}
+.menu-list a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  text-align: center;
+  line-height: 1.2;
+}
+.menu-list a:hover {
+  color: var(--color-primary-100);
+  background-color: var(--color-primary-700);
+}
+.menu-list a:active {
+  color: white;
+  background-color: #777;
+}
+.menu-list a i,
+.menu-list a {
+  transition-duration: var(--transition);
+}
+.menu-list a:hover i {
+  color: var(--color-primary-100);
+}
+.mobile-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 24px;
+  width: 100%;
+}
+.menu-icon {
+  display: block;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 1;
+  margin: auto 3px;
+}
+.menu {
+  display: none;
+  position: fixed;
+  top: 91px;
+  right: 0;
+  background-color: #fff;
+  border-radius: 6px 0 0 6px;
+  z-index: 1;
+  overflow: hidden;
+  box-shadow: var(--box-shadow-lg);
+}
+#hamburger-menu:checked + .menu { display: block; }
+#hamburger-menu { display: none; }
+.menu-list-item a {
+  text-decoration: none;
+  color: #010101; 
+  display: flex;
+  align-items: center; 
+  padding: 12px 18px;
+}
+
+/*Hero banner*/
 .hero {
   position: relative;
 }
 .hero img {
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
 }
 .hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: hsla(0, 0%, 0%, .75);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: hsla(0, 0%, 0%, .75);
 }
 .hero-title {
   color: var(--color-white-100);
   font-size: 24px;
 }
-.slogan {
+.hero-slogan {
   color: var(--color-white-100);
   font-size: 16px;
   margin-bottom: 20px;
 }
-.slogan span {
+.hero-slogan span {
   color: var(--color-primary-400);
   text-transform: uppercase;
   font-weight: 700;
 }
-  
-/*Cards på exhibition*/
-.cards-exhibitions {
+
+
+/*Cards*/
+/* * Info cards */
+.info-card {
+  width: 100%;
+  max-width: 800px;
+  margin: 48px auto 0 auto;
+  padding: 12px 24px 36px 24px;
+  text-align: center;
+  background-color: var(--color-primary-700);
+  color: #fff;
+  box-shadow: var(--box-shadow-sm);
+  border-radius: 10px;
+}
+.info-card h2 {
+  color: var(--color-primary-100);
+}
+.info-card-options {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.info-card-options div {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+}
+.info-card-options label {
+  margin: 0 24px 0 6px;
+  font-size: 18px;
+}
+.info-card-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.info-card-actions label {
+  display: block;
+  margin-top: 12px;
   margin-bottom: 12px;
 }
-
-
-.cards-exhibitions-description h2 {
-  margin-top: 0;
+.info-card-actions-input {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+}
+.info-card-actions input,
+.form-submit-btn {
+  height: 46px;
+  border: 2px solid;
+}
+.info-card-actions-input input {
+  margin: var(--margin-none);
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border: 2px solid var(--color-primary-700);
+}
+.form-submit-btn {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-color: var(--color-primary-700);
+  font-size: 14px;
 }
 
-.cards-explore-exhibitions img {
+/* * Image cards */
+.image-card {
+  margin-bottom: 12px;
+}
+.image-card-description h2 {
+  margin-top: 0;
+}
+.card-image-column img {
  width: 100%;
  height: auto;
  display: block;
@@ -375,17 +422,57 @@ a {
  left: 0;
  background-image: url('./img/adris-george-1-1_11zon.jpg');
 }
-
-
-.cards-exhibitions-description p {
+.image-card-description p {
   margin-top: 6px;
 }
-.cards-exhibitions-description {
+.image-card-description {
   padding: 0px 10px 24px 10px;
 }
-.cards-exhibitions-description p:first-child {
+.image-card-description p:first-child {
   margin-top: 0;
 }
+/* * Illustration cards */
+.card {
+  max-width: 800px;
+  margin: 24px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: var(--box-shadow-sm);
+  border-radius: 8px;
+}
+.card h2 {
+  color: var(--color-black-700);
+}
+.card p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 15px;
+}
+.card .color-icon {
+  background-color: var(--color-primary-700);
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.card .icon-container {
+  padding: 24px 12px 0 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card .color-icon i {
+  padding: var(--padding-none);
+  margin: var(--margin-none);
+  color: var(--color-primary-100);
+  font-size: 24px;
+}
+
+
 /*VISIT*/
 .visit {
   line-height: 1.6;
@@ -414,7 +501,7 @@ a {
   margin-bottom: 15px;
 }
 
-/*? Explore page */
+/*Explore page */
 .explore-heading {
   margin-bottom: 20px; 
 }
@@ -425,24 +512,8 @@ a {
   align-items: center;
   text-align: center;
 }
-.exhibition-cards-container{
-  flex-direction: row;
-  
-}
-.exhibition-cards-container h2 {
-  margin-top: 20px; 
-}
 
-.exhibition-cards-container p {
-  margin-bottom: 10px;
-}
-
-.exhibition-cards-container img {
-  width: 100%;
-  max-width: 300px;
-}
-
-/* ? Visit page / opening hours / Explore */
+/*Visit page / opening hours / Explore */
 .opening-hours,
 .admission-info,
 .accessibility,
@@ -462,7 +533,7 @@ a {
 .section-container {
   width: 100%;
 }
-.cards-exhibitions.card-light {
+.image-card.card-light {
   background-color: #fafafa;
 }
 
@@ -496,7 +567,8 @@ a {
   text-transform: uppercase;
 }
 
-.explore-title {
+.section-title {
+  /* font-size: 36px; */
   margin: 24px 0;
 }
 .section-container {
@@ -535,123 +607,10 @@ a {
 .donation-page h1 {
   margin-top: 24px;
 }
-.donation-card {
-  width: 100%;
-  max-width: 800px;
-  margin: 48px auto 0 auto;
-  padding: 12px 24px 36px 24px;
-  text-align: center;
-  background-color: var(--color-primary-700);
-  color: #fff;
-  box-shadow: var(--box-shadow-sm);
-  border-radius: 10px;
-}
-.donation-card h2 {
-  color: var(--color-primary-100);
-}
 
-.donation-options {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-bottom: 15px;
-}
-.donation-options div {
-  display: flex;
-  justify-content: center;
-  font-size: 16px;
-}
-.donation-options label {
-  margin: 0 24px 0 6px;
-  font-size: 18px;
-}
-.donation-card-actions {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-.donation-card-actions label {
-  display: block;
-  margin-top: 12px;
-  margin-bottom: 12px;
-}
-.donation-card-actions-input {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  text-align: left;
-}
-.donation-card-actions input,
-.donation-card-btn {
-  height: 46px;
-  border: 2px solid;
-}
-.donation-card-actions-input input {
-  margin: 0;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  border: 2px solid var(--color-primary-700);
-}
-.donation-card-btn {
-  width: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  border-color: var(--color-primary-700);
-  font-size: 14px;
-}
 
 
 /*Tekst på donate siden.*/
-.volunteering,
-.support,
-.internships {
-  max-width: 800px;
-  margin: 24px auto;
-  padding: 20px;
-  background-color: #f9f9f9;
-  box-shadow: var(--box-shadow-sm);
-  border-radius: 8px;
-}
-
-.volunteering h2,
-.support h2,
-.internships h2 {
-  color: var(--color-black-900);
-}
-
-.volunteering, .support, .internships p {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #333;
-  margin-bottom: 15px;
-}
-/*Iconer */
-.color-icon{
-  background-color: var(--color-primary-700);
-  width: 80px;
-  height: 80px;
-  border-radius: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-}
-.icon-container {
-  padding: 24px 12px 0 12px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.color-icon i {
-  padding: 0;
-  margin: 0;
-  color: var(--color-primary-100);
-  font-size: 24px;
-}
 /*Footer*/
 .footer-image {
   width: 100%;
@@ -679,7 +638,7 @@ a {
 }
 .footer-column h4 {
   margin-bottom: 12px;
-  padding: 0;
+  padding: var(--padding-none);
   text-align: left;
 }
 .newsletter-container {
@@ -719,47 +678,42 @@ a {
   margin-top: 100px;
 }
 
-/* 
-? #############################
-? ####### MEDIA QUERIES #######
-? #############################
-*/
+/* MEDIA QUERIES*/
 .desktop-only { display: none; }
-
 
 /* ? TABLET MEDIA QUERY */
 @media screen and (min-width: 768px) {
 
-  .cards-exhibitions {
+  .image-card {
     display: flex;
     margin: var(--padding-lg);
   }
-  .cards-exhibitions > * {
+  .image-card > * {
     width: 50%;
   }
-  .cards-exhibitions.card-bg-primary-dark {
+  .image-card.card-bg-primary-dark {
     flex-direction: row;
   }
-  .cards-exhibitions.card-light {
+  .image-card.card-light {
     flex-direction: row-reverse;
   }
-  .cards-explore-exhibitions img {
+  .card-image-column img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: bottom;
   }
-  .cards-exhibitions-description {
+  .image-card-description {
     padding: 15px;
   }
-  .cards-exhibitions-description h2,
-  .cards-exhibitions-description h3 {
-    margin: 0;
-    padding: 0;
+  .image-card-description h2,
+  .image-card-description h3 {
+    margin: var(--margin-none);
+    padding: var(--padding-none);
     font-size: 26px;
     text-align: left;
   }
-  .cards-exhibitions-description p {
+  .image-card-description p {
     font-size: 18px;
   }
   .footer-image {
@@ -772,11 +726,11 @@ a {
     flex: 1;
   }
 
-  .explore-title {
+  .section-title {
     margin: 48px 0;
   }
   .section-heading {
-    padding: 0;
+    padding: var(--padding-none);
     text-align: left;
   }
   .illustration-card-image img {
@@ -787,7 +741,6 @@ a {
 
 }
 
-
 /* TODO: Fix paragraphs and images + menu */
 /* ? SMALL LAPTOP MEDIA QUERY */
 @media screen and (min-width: 992px) {
@@ -797,11 +750,11 @@ a {
   header {
     justify-content: flex-end;
   }
-  .logo {
+  .branding {
     flex: 1;
     text-align: left;
   }
-  .logo img {
+  .branding img {
     width: auto;
   }
 
@@ -829,7 +782,7 @@ a {
   }
   .menu-list a:hover {
     background-color: transparent !important;
-    color: var(--color-black-900);
+    color: var(--color-black-700);
     border-bottom-color: var(--color-primary-700);
   }
   .menu-list a:hover i {
@@ -855,11 +808,10 @@ a {
   .hero-title {
     font-size: 32px;
   }
-  .slogan {
+  .hero-slogan {
     font-size: 20px;
   }
-
- 
+  
   .section-container {
     display: flex;
     flex-direction: row;
@@ -899,46 +851,46 @@ a {
     height: 100%;
   }
 
-  .cards-exhibitions-container {
+  .image-card-container {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .cards-exhibitions {
+  .image-card {
     max-width: 1400px;
     max-height: 600px;
     margin: var(--padding-lg);
   }
-  .cards-exhibitions > * {
+  .image-card > * {
     width: 50%;
   }
-  .cards-exhibitions.card-bg-primary-dark,
-  .cards-exhibitions.card-light {
+  .image-card.card-bg-primary-dark,
+  .image-card.card-light {
     flex-direction: row;
   }
-  .cards-exhibitions.card-light {
+  .image-card.card-light {
     flex-direction: row-reverse;
   }
-  .cards-explore-exhibitions img {
+  .card-image-column img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: bottom;
   }
-  .cards-exhibitions-description {
+  .image-card-description {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 42px;
   }
-  .cards-exhibitions-description h2,
-  .cards-exhibitions-description h3 {
-    margin: 0;
-    padding: 0;
+  .image-card-description h2,
+  .image-card-description h3 {
+    margin: var(--margin-none);
+    padding: var(--padding-none);
     font-size: 32px;
     text-align: left;
   }
-  .cards-exhibitions-description p {
+  .image-card-description p {
     font-size: 20px;
   }
   .footer-image {
