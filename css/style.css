@@ -181,11 +181,13 @@ h6 {
   padding: 10px;
 }
 h1 { font-weight: 600; }
-h2 {
+
+.section-title {
+  margin: 24px 0;
   color: #333;
-  margin-bottom: 20px;
-  margin-top: 15px;
   text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
 }
 p {
   max-width: 700px;
@@ -414,14 +416,7 @@ a:hover {
 .image-card-description h2 {
   margin-top: 0;
 }
-.card-image-column img {
- width: 100%;
- height: auto;
- display: block;
- top: 0;
- left: 0;
- background-image: url('./img/adris-george-1-1_11zon.jpg');
-}
+
 .image-card-description p {
   margin-top: 6px;
 }
@@ -567,10 +562,7 @@ a:hover {
   text-transform: uppercase;
 }
 
-.section-title {
-  /* font-size: 36px; */
-  margin: 24px 0;
-}
+
 .section-container {
   max-width: 1400px;
 }
