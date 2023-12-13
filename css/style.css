@@ -32,7 +32,7 @@
   --box-shadow-lg: 0 10px 20px rgba(0, 0, 0, .12);
 
   --mask: radial-gradient(167.71px at 50% 225.00px,#000 99%,#0000 101%) calc(50% - 150px) 0/300px 100%,
-    radial-gradient(167.71px at 50% -150px,#0000 99%,#000 101%) 50% 75px/300px 100% repeat-x;
+          radial-gradient(167.71px at 50% -150px,#0000 99%,#000 101%) 50% 75px/300px 100% repeat-x;
 
   --transition: 0.2s;
 }
