@@ -411,7 +411,16 @@ a:hover {
 
 /* * Image cards */
 .image-card {
+  /* max-width: 500px; */
   margin-bottom: 12px;
+}
+/* .card-image-column {
+  text-align: center;
+} */
+.card-image-column img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 .image-card-description h2 {
   margin-top: 0;
@@ -676,38 +685,6 @@ a:hover {
 /* ? TABLET MEDIA QUERY */
 @media screen and (min-width: 768px) {
 
-  .image-card {
-    display: flex;
-    margin: var(--padding-lg);
-  }
-  .image-card > * {
-    width: 50%;
-  }
-  .image-card.card-bg-primary-dark {
-    flex-direction: row;
-  }
-  .image-card.card-light {
-    flex-direction: row-reverse;
-  }
-  .card-image-column img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: bottom;
-  }
-  .image-card-description {
-    padding: 15px;
-  }
-  .image-card-description h2,
-  .image-card-description h3 {
-    margin: var(--margin-none);
-    padding: var(--padding-none);
-    font-size: 26px;
-    text-align: left;
-  }
-  .image-card-description p {
-    font-size: 18px;
-  }
   .footer-image {
     height: 200px;
   }
@@ -729,6 +706,50 @@ a:hover {
     width: 100%;
     max-width: 400px;
     height: 100%;
+  }
+
+  .image-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .image-card {
+    display: flex;
+    max-width: 1400px;
+    max-height: 600px;
+    margin: var(--padding-lg);
+  }
+  .image-card > * {
+    width: 50%;
+  }
+  .image-card.card-bg-primary-dark,
+  .image-card.card-light {
+    flex-direction: row;
+  }
+  .image-card.card-light {
+    flex-direction: row-reverse;
+  }
+  .card-image-column img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+  }
+  .image-card-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: var(--padding-md);
+  }
+  .image-card-description h2,
+  .image-card-description h3 {
+    margin: var(--margin-none);
+    padding: var(--padding-none);
+    font-size: 32px;
+    text-align: left;
+  }
+  .image-card-description p {
+    font-size: 14px;
   }
 
 }
@@ -884,6 +905,9 @@ a:hover {
   }
   .image-card-description p {
     font-size: 20px;
+  }
+  .section-title{
+    font-size: 21px;
   }
   .footer-image {
     height: 200px;
