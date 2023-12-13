@@ -36,13 +36,15 @@
 
   --transition: 0.2s;
 }
-
+.hidden{
+  display: none;
+}
 .footer-wavy-line {
   width: 100%;
   height: 150px;
   background-color: var(--color-primary-700);
   mask: var(--mask);
-  -webkit-mask: var(--mask);
+  -webkit-mask: var(--mask); /* https://www.css3.info/vendor-specific-extensions-to-css3/ */
 }
 .input {
   width: 100%;
