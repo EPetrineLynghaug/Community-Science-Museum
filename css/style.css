@@ -706,7 +706,7 @@ a:hover {
   }
   .illustration-card-image img {
     width: 100%;
-    max-width: 400px;
+    max-width: 300px;
     height: 100%;
   }
 
@@ -857,7 +857,7 @@ a:hover {
     justify-content: center;
   }
   .illustration-card-image img {
-    max-width: none;
+    max-width: 300px;
     height: 100%;
   }
 
