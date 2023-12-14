@@ -135,6 +135,9 @@
   margin-right: var(--padding-md); 
   color:  var(--color-primary-700);
 }
+.fa-location-arrow {
+  padding-right: 3px;
+}
 
 * {
   box-sizing: border-box;
