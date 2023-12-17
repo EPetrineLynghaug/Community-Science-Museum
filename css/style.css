@@ -42,7 +42,7 @@
     background-position-x: 1000px;
   }
   100% {
-    background-positon-x: 0;
+    background-positon: 0 0;
   }
 }
 @keyframes animation2 {
@@ -50,7 +50,7 @@
     background-position-x: 800px;
   }
   100% {
-    background-positon-x: 0;
+    background-positon: 0 0;
   }
 }
 @keyframes animation3 {
@@ -58,7 +58,7 @@
     background-position-x: 600px;
   }
   100% {
-    background-positon-x: 0;
+    background-positon: 0 0;
   }
 }
 
