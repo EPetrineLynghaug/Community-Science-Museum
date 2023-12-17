@@ -33,18 +33,69 @@
   --box-shadow-md: 0 6px 10px rgba(0, 0, 0, .12), 0 3px 6px rgba(0, 0, 0, .24);
   --box-shadow-lg: 0 10px 20px rgba(0, 0, 0, .12);
 
-  --mask: radial-gradient(167.71px at 50% 225.00px,#000 99%,#0000 101%) calc(50% - 150px) 0/300px 100%,
-          radial-gradient(167.71px at 50% -150px,#0000 99%,#000 101%) 50% 75px/300px 100% repeat-x;
 
   --transition: 0.2s;
 }
 
-.footer-wavy-line {
+@keyframes animation1 {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+@keyframes animation2 {
+  0% {
+    background-position-x: 800px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+@keyframes animation3 {
+  0% {
+    background-position-x: 600px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+.footer-waves {
+  position: absolute;
+  top: -65px;
   width: 100%;
-  height: 150px;
-  background-color: var(--color-primary-700);
-  mask: var(--mask);
-  -webkit-mask: var(--mask); /* https://www.css3.info/vendor-specific-extensions-to-css3/ */
+  height: 65px;
+}
+.footer-wave-1 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/wave-100.png');
+  background-size: 1000px 65px;
+  animation: animation1 18s linear infinite;
+}
+.footer-wave-2 {
+  position: absolute;
+  top: 5px;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  background-image: url('../img/wave-100.png');
+  background-size: 800px 65px;
+  animation: animation2 24s linear infinite;
+}
+.footer-wave-3 {
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  background-image: url('../img/wave-100.png');
+  background-size: 600px 65px;
+  animation: animation3 32s linear infinite;
 }
 .input {
   width: 100%;
@@ -158,9 +209,10 @@ body{
 }
 main {
   flex: 1;
-  margin-bottom: 15px;
+  margin-bottom: 64px;
 }
 footer {
+  position: relative;
   text-align: center;
   margin-top: 20px;
 }
