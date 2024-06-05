@@ -3,7 +3,6 @@ https://museum-science.netlify.app
 
 ![image](./img/museum.png)
 
-A simple overview of the use/purpose of the project.
 
 ## Description
 
