@@ -34,6 +34,7 @@ Here you can detail any information you want to provide regarding contributing t
 
 ## Contact
 
-This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
+This is where you can leave your social links for people to contact you, such as a LinkedIn profile or 
+Github.
 
 [My LinkedIn page](https://www.linkedin.com/in/petrine-lynghaug/)
