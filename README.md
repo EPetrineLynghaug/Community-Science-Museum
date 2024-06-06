@@ -28,7 +28,6 @@ git git@github.com:EPetrineLynghaug/Community-Science-Museum.git
 
 ## Contact
 
-This is where you can leave your social links for people to contact you, such as a LinkedIn profile or 
-Github.
-
 [My LinkedIn page](https://www.linkedin.com/in/petrine-lynghaug/)
+[My mail] Petrinelynghaug@gmail.com
+
