@@ -28,6 +28,6 @@ git git@github.com:EPetrineLynghaug/Community-Science-Museum.git
 
 ## Contact
 
-[My LinkedIn page](https://www.linkedin.com/in/petrine-lynghaug/)
-[My mail] Petrinelynghaug@gmail.com
+- [My LinkedIn page](https://www.linkedin.com/in/petrine-lynghaug/)
+- Petrinelynghaug@gmail.com
 
